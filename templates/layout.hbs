@@ -6,17 +6,23 @@
 
   <title>{{config.title}}</title>
 
-  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
   <section class="section">
     <div class="container">
       <div class="columns">
-        <div class="column is-narrow">
+        <div class="column is-one-fifth">
+          <p class="title"><a href="/">{{config.title}}</a></p>
+          <p class="subtitle">{{config.subtitle}}</p>
+          <hr>
+          <figure class="image">
+            <img src="/static/self.jpg">
+          </figure>
           <p class="content">
-            <p class="title"><a href="/">{{config.title}}</a></p>
-            <p class="subtitle">{{config.subtitle}}</p>
+            <p>{{config.description}}</p>
           </p>
+          <hr>
           <aside class="menu">
             <p class="menu-label">{{config.links_title}}</p>
             <ul>

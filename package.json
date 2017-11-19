@@ -1,11 +1,11 @@
 {
-  "name": "thick-blog",
+  "name": "garbados-blog",
   "version": "0.1.0",
   "private": true,
-  "description": "A blog template following the THICK application model.",
+  "description": "A blog following the THICK application model.",
   "scripts": {
     "test": "echo 'push to master i dare you just try it make my day' | (say || espeak)",
-    "build": "node tasks/build.js",
+    "build": "node tasks/build.js && node-sass style.scss style.css",
     "new-entry": "node tasks/new-entry.js",
     "clean": "rm entries/*.md entries/*.html; npm run build",
     "watch": "watch 'npm run build' templates entries --filter=./lib/filter.js",
@@ -17,12 +17,13 @@
   "author": "Diana Thayer <garbados@gmail.com>",
   "license": "GPL-3.0",
   "devDependencies": {
+    "async": "^2.6.0",
+    "bulma": "^0.6.1",
+    "flatpages": "^0.2.2",
+    "font-awesome": "^4.7.0",
     "handlebars": "^4.0.11",
     "marked": "^0.3.6",
+    "node-sass": "^4.7.1",
     "watch": "^1.0.2"
-  },
-  "dependencies": {
-    "async": "^2.6.0",
-    "flatpages": "^0.2.2"
   }
 }

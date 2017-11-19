@@ -1,10 +1,10 @@
 {
-	"title": "T H I C K ideas",
+	"title": "W O R D S",
 	"subtitle": "Essays, etc.",
-	"links_title": "Related places:",
+	"description": "My name is Diana. I make things but generally not very well. I write about those things here.",
+	"links_title": "Me, elsewhere:",
 	"links": {
-		"THICK apps": "https://beakerbrowser.com/docs/inside-beaker/thick-applications.html",
-		"Beaker": "https://beakerbrowser.com/",
-		"Dat": "https://datproject.org/"
+		"Mastodon": "https://toot.cat/@garbados",
+		"GitHub": "https://github.com/garbados"
 	}
 }
