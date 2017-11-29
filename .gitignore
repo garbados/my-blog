@@ -2,3 +2,5 @@ node_modules
 .dat
 index.html
 entries/*.html
+entries/*.md
+*.html

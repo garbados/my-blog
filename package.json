@@ -2,10 +2,10 @@
   "name": "garbados-blog",
   "version": "0.1.0",
   "private": true,
-  "description": "A blog following the THICK application model.",
+  "description": "Words as thought by meat.",
   "scripts": {
     "test": "echo 'push to master i dare you just try it make my day' | (say || espeak)",
-    "build": "node tasks/build.js && node-sass style.scss style.css",
+    "build": "node tasks/build.js && node-sass static/style.scss static/style.css",
     "new-entry": "node tasks/new-entry.js",
     "clean": "rm entries/*.md entries/*.html; npm run build",
     "watch": "watch 'npm run build' templates entries --filter=./lib/filter.js",

@@ -59,7 +59,7 @@ async.waterfall([
         async.parallel([
           fs.writeFile.bind(fs, pathJoin('index.html'), index, FORMAT),
           async.map.bind(async, entries, (entry, done) => {
-            fs.writeFile(pathJoin('entries', `${entry.name}.html`), entry.html, done)
+            fs.writeFile(pathJoin(`${entry.name}.html`), entry.html, done)
           })
         ], done)
       }
