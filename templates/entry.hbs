@@ -1,7 +1,11 @@
 {{#> layout }}
   {{#with entry}}
     <div class="box">
-      <p><a href="{{name}}.html">&gt; {{title}}</a></p>
+      <p>
+        <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
+        &gt;
+        <a href="{{name}}.html">{{title}}</a>
+      </p>
       <hr>
       <div class="content">
         {{{html}}}
