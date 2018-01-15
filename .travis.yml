@@ -1,6 +1,8 @@
 language: node_js
 node_js:
 - 8
+after_success:
+- echo 'node_modules' > .gitignore
 deploy:
   provider: pages
   skip_cleanup: true
