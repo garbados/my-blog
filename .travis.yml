@@ -1,12 +1,12 @@
 language: node_js
 node_js:
 - 8
-- 6
-cache:
-  directories:
-  - node_modules
-script:
-- npm run build
-- npm run new-entry -- hello
-- npm run new-entry
-- npm run clean
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: "$GITHUB_TOKEN"
+  on:
+    branch: master
+env:
+  global:
+    secure: MkN7gHnvQgpHQrLwAYzfspjMgEKPOdO0f20ky6KAC+WJvayo5WFEDOQY866Vn0FXPvWISXCejkCP/TbCA093p1lOT8JUR5yLPNkwEqfuFMuB/cLQYXHu1lwoXLn77lk7Bp9a3AdDyvKU6fHac9HorYozxQZ5eBKgm7msSKB4ZOQ2kBPt+X5H0a/dspSVeU98Wuu9hAmEOHdX5cZD9vfB8s+XI3hWFg0W9wNnUcgGRryB80DzS3hBkBnv3ku//sd3va7mBzWtiaBQe8B3kRYp2ZCV4v8PrB/tHQo2UjVqy0Xm/gtM1yTZh4YZQaFH8GpHIAcpT0piSakcDXKzdTAxw/T9Pq+suMK71EphL4n7JtYsqoewuYyRJwyjcWCD6bCmIaLNmso5iqjPX6zGdGi4dr3KhSHvmVZOOJ6UdTBTpo1MbWDDJBAyq5VGx4EZ+2Ep3APkhIuxnxFnRDikD6ehKYmGH+ju6QyUVKQbwWWojdUmfYmCuIoKYOhOHUC8pb2AGwIZbWLo084jqzpE3QHf5kOT27LjhXjCdxD3m89yVTSvQfw2Ll6VzUYdx5EBmmw8w0nrYJ4ySqH2+Nj7pf3IujHjFWAJn1eIavn0cks9qPkeANbBCKcQ9MgAXmBCRvxuiBMrFjpXX7Y6sRTyM4K72uSN8B7MMW4qzIEEkjRWVcA=
