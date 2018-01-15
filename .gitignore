@@ -1,6 +1,3 @@
 node_modules
 .dat
-index.html
-entries/*.html
-*.html
 package-lock.json
