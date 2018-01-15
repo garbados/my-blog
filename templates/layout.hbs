@@ -25,12 +25,21 @@
           <hr>
           <aside class="menu">
             <p class="menu-label">{{config.links_title}}</p>
-            <ul>
+            <ul class="menu-list">
               {{#each config.links}}
               <li>
                 <a href="{{this}}">{{@key}}</a>
               </li>
               {{/each}}
+            </ul>
+          </aside>
+          <hr>
+          <aside class="menu">
+            <p class="menu-label">Meta</p>
+            <ul class="menu-list">
+              <li>
+                <a href="rss.xml">RSS</a>
+              </li>
             </ul>
           </aside>
         </div>

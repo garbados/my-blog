@@ -1,12 +1,13 @@
 {
   "name": "garbados-blog",
+  "description": "Words as thought by meat.",
+  "homepage": "https://garbados.github.io/my-blog",
   "version": "1.0.0-beta",
   "private": true,
-  "description": "Words as thought by meat.",
   "scripts": {
     "start": "npm run build",
     "test": "npm run build",
-    "build": "node tasks/build.js && node-sass static/style.scss static/style.css",
+    "build": "node tasks/build.js && node tasks/rss.js && node-sass static/style.scss static/style.css",
     "new-entry": "node tasks/new-entry.js",
     "clean": "rm entries/*.md entries/*.html; npm run build",
     "watch": "watch 'npm run build' templates entries --filter=./lib/filter.js",
@@ -25,6 +26,7 @@
     "handlebars": "^4.0.11",
     "marked": "^0.3.12",
     "node-sass": "^4.7.2",
+    "rss": "^1.2.2",
     "watch": "^1.0.2"
   }
 }

@@ -2,3 +2,4 @@ node_modules
 .dat
 package-lock.json
 *.html
+rss.xml
