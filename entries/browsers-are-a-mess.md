@@ -24,7 +24,7 @@ What a scam.
 
 But, it's not JavaScript's fault. I have my beef with Eich but I daresay things would be just as bad as they are now if Java had become the language of the web: behind every URL would lurk arbitrarily large applications with opaque rights to exploit your machinery, powered by advertising and malware. We can blame JS for being entrenched demoware but the ethics of the browser are distinct.
 
-Let's list the major browsers: Chrome, FireFox, Safari, and Edge. The corporations behind these browsers have outsized influence on web standards for better and worse. They look at the usage data for their browsers and optimize it for rendering the sites people visit. That is, Facebook, and little else. This little software oligarchy encompasses most of the time that people spent on computers. All of them are deeply entrenched in the business of surveillance. Tell me that's a right state of affairs. Try it.
+Let's list the major browsers: Chrome, Firefox, Safari, and Edge. The corporations behind these browsers have outsized influence on web standards for better and worse. They look at the usage data for their browsers and optimize it for rendering the sites people visit. That is, Facebook, and little else. This little software oligarchy encompasses most of the time that people spent on computers. All of them are deeply entrenched in the business of surveillance. Tell me that's a right state of affairs. Try it.
 
 -----
 
