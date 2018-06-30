@@ -42,7 +42,7 @@ On September 18, 2015 I said the last thing I would ever say to her:
 
 -----
 
-I read a recollection recently by Meredith L. Patterson of her time in a Dutch ward, in an essay titled [Tales from Underwater](https://status451.com/2018/06/18/tales-from-underwater/):
+I read a recollection recently by Meredith L. Patterson of her time in a Belgian ward, in an essay titled [Tales from Underwater](https://status451.com/2018/06/18/tales-from-underwater/):
 
 > Again, not the response my US-conditioned reflexes were expecting: “But sertraline was all right?” I nodded. “Then that’s fine. I’m also going to put down an optional 10mg of etumine, in case the intrusive thoughts get to be too much. It’s an atypical antipsychotic. If you decide you need it, you can just ask at the nurses’ station, okay?” Gentle Reader, I have seen patient-controlled analgesia before, but this was the first time I’ve ever encountered patient-controlled antipsychotics.
 
@@ -52,7 +52,7 @@ I read a recollection recently by Meredith L. Patterson of her time in a Dutch w
 
 Meredith is right about the stringed instruments. We had one instrument in the ward, a guitar, and you could only use it under supervision -- meaning, as you stood in front of the orderly that handed it to you.
 
-The approach that Meredith describes is hard to imagine for me. I *can* imagine it, but it's like painting a dream. I think about what that kind of compassionate, proactive care could have meant for Chloe. She could have had space to breathe, to recuperate, to come together apart from the malice of strangers who stalked and threatened her, outside of capitalist pressure to pay up or die. The labor to support her did not exist among us, but that Dutch ward shows me it does exist. That she couldn't access it ultimately contributed to her death. Strained and fragile, our communities struggle to organize the labor to protect our most vulnerable from institutional machinery that wants us dead. Though the resources exist, they are kept from us.
+The approach that Meredith describes is hard to imagine for me. I *can* imagine it, but it's like painting a dream. I think about what that kind of compassionate, proactive care could have meant for Chloe. She could have had space to breathe, to recuperate, to come together apart from the malice of strangers who stalked and threatened her, outside of capitalist pressure to pay up or die. The labor to support her did not exist among us, but that Belgian ward shows me it does exist. That she couldn't access it ultimately contributed to her death. Strained and fragile, our communities struggle to organize the labor to protect our most vulnerable from institutional machinery that wants us dead. Though the resources exist, they are kept from us.
 
 The ward never wanted Chloe to survive. They wanted her to pay up, like a good customer.
 
