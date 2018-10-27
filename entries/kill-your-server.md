@@ -32,6 +32,7 @@ As an example, let's consider a blogging application where users can write entri
 I use [PouchDB](https://pouchdb.com/) to store data in the client. It acts as a wrapper around whatever storage mechanism the browser supports and mirrors the API used by CouchDB. Saving an entry works like this:
 
 ```javascript
+
 const db = new PouchDB('blog')
 const entry = { _id: `entry:${uuid()}`, ... }
 const { id: entryId } = await db.put(entry)
@@ -40,12 +41,14 @@ const { id: entryId } = await db.put(entry)
 Then, to retrieve it:
 
 ```javascript
+
 const entry = await db.get(entryId)
 ```
 
 PouchDB comes with a "primary index" which sorts documents by their `_id`, allowing you to perform queries against that sorted list. As a result, I've prefaced the entry's ID with `entry:` so that it can be found quickly without a custom index. To retrieve all entries, we select all documents whose IDs start with `entry:`:
 
 ```javascript
+
 const { rows } = await db.allDocs({
   include_docs: true,
   startkey: 'entry:',
@@ -59,6 +62,7 @@ In this case, we use `startkey` and `endkey` to select only documents whose IDs 
 To paginate this data, use the `limit` option to set a maximum number of results. Then, to retrieve the next page, set the startkey to the highest ID found in your initial query. For example:
 
 ```javascript
+
 // get the first page
 const { rows: firstPage } = await db.allDocs({
   limit: 20,
@@ -87,18 +91,21 @@ If the user wipes their browser cache, they'll lose all their entries. To give i
 PouchDB and CouchDB share a [robust replication protocol](http://docs.couchdb.org/en/stable/replication/index.html) that allows them to sync data back and forth. In a simple scenario, you could run a CouchDB installation on your local machine and then have a serverless app replicate your data to it. Your data still only lives on hardware you control, but now it can be restored if the browser's storage gets wiped. Here is an example that replicates once to a local CouchDB, creating a snapshot backup:
 
 ```javascript
+
 await db.replicate.to('http://localhost:5984')
 ```
 
 Here is how to restore browser storage from that backup:
 
 ```javascript
+
 await db.replicate.from('http://localhost:5984')
 ```
 
 This is fine if you have a CouchDB installation, but if you're relying on someone else's then you'll want to encrypt your backup so that database administrators can't read your entries. For this, I use [ComDB](https://github.com/garbados/comdb), a PouchDB plugin that transparently encrypts and decrypts any replications. This way, your data remains unencrypted in the browser so that you can query it normally, but it's obfuscated when replicated elsewhere, and unobfuscated when you replicate it back. To use ComDB for this, you'll need to set a password when you set up the database:
 
 ```javascript
+
 const PouchDB = require('pouchdb')
 PouchDB.plugin(require('comdb'))
 
@@ -115,6 +122,7 @@ Beaker's [DatArchive](https://beakerbrowser.com/docs/apis/dat) web API allows a 
 To create a public page for your blog, the application will template user data and create a static site by writing HTML files to an archive. For this example, I'll use [handlebars](http://handlebarsjs.com/):
 
 ```javascript
+
 // create the archive
 const archive = await DatArchive.create({
   title: 'My blog!',
@@ -140,6 +148,7 @@ Just as you can template your entries and publish them as HTML, you can also ser
 Here's how to serialize and publish your entries:
 
 ```javascript
+
 // get all your entries
 const { rows } = await db.allDocs({
   include_docs: true,
@@ -158,6 +167,7 @@ archive.writeFile('/entries.json', JSON.stringify(entries), 'utf-8')
 Given the URL to this archive, here is how another user could download those entries:
 
 ```javascript
+
 const archive = await DatArchive.load(archiveUrl)
 const rawEntries = await archive.readFile('/entries.json', 'utf-8')
 const entries = JSON.parse(rawEntries).map((entry) => {
