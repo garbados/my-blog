@@ -2,5 +2,4 @@
 
 [![build status](https://img.shields.io/travis/garbados/my-blog/master.svg?style=flat-square)](https://travis-ci.org/garbados/my-blog)
 
-
-Hello. This is my blog. It's based on the [THICK-blog](https://github.com/garbados/thick-blog). If you would like your own, check there.
+Hello. This is my blog. I host it through GitHub Pages because it's free hosting, Jim.
