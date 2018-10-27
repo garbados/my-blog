@@ -6,11 +6,17 @@
   "private": true,
   "scripts": {
     "start": "npm run build",
-    "test": "npm run build",
-    "build": "node tasks/build.js && node tasks/rss.js && node-sass static/style.scss static/style.css",
+    "test": "npm run build && npm audit",
+    "prebuild": "mkdir -p static fonts",
+    "build": "run-p build:*",
+    "build:html": "./bin.js build",
+    "build:rss": "./bin.js rss",
+    "build:scss": "node-sass src/scss/style.scss static/style.css",
+    "build:fonts": "cp node_modules/font-awesome/fonts/* fonts/",
+    "build:images": "cp src/img/* static/",
     "new-entry": "node tasks/new-entry.js",
-    "clean": "rm entries/*.md entries/*.html; npm run build",
-    "watch": "watch 'npm run build' templates entries --filter=./lib/filter.js",
+    "clean": "rm entries/*.md *.html; npm run build",
+    "watch": "watch 'npm run build' src entries",
     "share": "dat share ."
   },
   "keywords": [
@@ -19,14 +25,15 @@
   "author": "Diana Thayer <garbados@gmail.com>",
   "license": "GPL-3.0",
   "devDependencies": {
-    "async": "^2.6.0",
     "bulma": "^0.6.2",
-    "flatpages": "^0.2.2",
+    "flatpages": "^0.2.3",
     "font-awesome": "^4.7.0",
     "handlebars": "^4.0.11",
     "marked": "^0.3.12",
     "node-sass": "^4.7.2",
+    "npm-run-all": "^4.1.3",
     "rss": "^1.2.2",
-    "watch": "^1.0.2"
+    "watch": "^1.0.2",
+    "yargs": "^12.0.2"
   }
 }
