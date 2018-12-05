@@ -24,15 +24,11 @@ What a scam.
 
 But, it's not JavaScript's fault. I have my beef with Eich but I daresay things would be just as bad as they are now if Java had become the language of the web: behind every URL would lurk arbitrarily large applications with opaque rights to exploit your machinery, powered by advertising and malware. We can blame JS for being entrenched demoware but the ethics of the browser are distinct.
 
-The corporations behind major browsers have outsized influence on web standards for better and worse. They look at the usage data for their browsers and optimize it for rendering the sites people visit. That is, Facebook, and little else. This little software oligarchy encompasses most of the time that people spent on computers. All of them are deeply involved in the business of surveillance.
-
-Tell me that's a right state of affairs. Try it.
-
------
+The corporations behind major browsers have outsized influence on web standards for better and worse. They look at the usage data for their browsers and optimize it for rendering the sites people visit. That is, Facebook, and little else. This little software oligarchy encompasses most of the time that people spend on computers. All of them are deeply involved in the business of surveillance.
 
 Still, the paradigm of the browser as a shield between the user and untrusted content is a good one. Every consumer operating system has a browser, and most users spend most of their time there. I write JavaScript because apps on the web are uniquely accessible. Browsers are a mess but the space they have created now matters. I want to imagine a better browser:
 
-* **Multi-protocol**: Today's browsers handle HTTP, and that's all. [Beaker][beaker] adds support for the P2P [Dat][dat] protocol as `dat://`. [IPFS][ipfs] has browser extensions now that add support for the IPFS protocol at `ipfs://`. Imagine a browser that supported all of the above, and `gopher://` besides. Tell me it's too difficult.
+* **Multi-protocol**: Today's browsers handle HTTP, and that's all. [Beaker][beaker] adds support for the P2P [Dat][dat] protocol as `dat://`. [IPFS][ipfs] has browser extensions now that add support for the IPFS protocol at `ipfs://`. Imagine a browser that supported all of the above, and `gopher://` besides.
 * **Virtualized**: JavaScript operates on a parody of a virtual machine. We dance around the lack of a filesystem and the absence of proper network interfaces. What if we gave up the lie and just executed remote code in strictly permissioned VMs? If a program needs filesystem access, it needs permission, and it still won't be the host filesystem. Need the network? Get permission. Want to daemonize? Permission.
 - **Multi-language**: The browser has become an application environment and applications not written in JavaScript are just as suited for it as JS is. Write websites in Python or C, or load ones that exist today from a URL and execute them in the VM.
 
@@ -40,7 +36,7 @@ At least, that's what I'd really like to see. If we're going to treat the browse
 
 [ajax]: https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX
 [beaker]: https://beakerbrowser.com/
+[dat]: https://datproject.org/
 [ipfs]: https://ipfs.io
 [service-workers]: https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API
 [zine]: https://garbados.github.io/zine/#/
-[dat]: https://datproject.org/
