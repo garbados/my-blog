@@ -14,7 +14,7 @@
     "build:scss": "node-sass src/scss/style.scss static/style.css",
     "build:fonts": "cp node_modules/font-awesome/fonts/* fonts/",
     "build:images": "cp src/img/* static/",
-    "new-entry": "node tasks/new-entry.js",
+    "new-entry": "./bin.js new-entry",
     "clean": "rm entries/*.md *.html; npm run build",
     "watch": "watch 'npm run build' src entries",
     "share": "dat share ."
