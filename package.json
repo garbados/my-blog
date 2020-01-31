@@ -26,7 +26,7 @@
   "license": "GPL-3.0",
   "devDependencies": {
     "bulma": "^0.8.0",
-    "flatpages": "^0.2.3",
+    "flatpages": "^0.2.4",
     "font-awesome": "^4.7.0",
     "handlebars": "^4.7.2",
     "marked": "^0.8.0",
