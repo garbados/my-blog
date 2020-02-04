@@ -40,9 +40,9 @@ Should you publish source? What if corpers steal it? Of course you should publis
 
 Your work will be stolen. All that saves labor under capitalism shall be used against labor, and so our tools disenfranchise each other. The very dream of libre 'ware drives down wages. Innocuous tools become the basis of vile and heinous atrocities, leaving developers with only [drastic options](https://onezero.medium.com/coders-should-be-activists-5104bd18e349). The neutrality of software foundations like Apache has made it cozy with merchants of death. Beware the neutrality that cannot be distinguished from complicity.
 
-To protect open source, organize labor. In our workplaces, we need unions to assert boundaries about acceptable tasks and acceptable usage. In our projects, we need license cooperatives that can control the issuance of commercial licenses to known parties, so no one has to see their works become weapons of war. Still your works will be stolen and misused, and still the profiteer will draw gold from blood. Do not be intimidated. Do not abandon the way.
+To protect open source, organize labor. In our workplaces, we need unions to assert boundaries about acceptable tasks and acceptable usage. In our projects, we need [cross-license collaboratives](https://xlcollaborative.com/) that can control the issuance of commercial licenses to known parties, so no one has to see their works become weapons of war. Still your works will be stolen and misused, and still the profiteer will draw gold from blood. Do not be intimidated. Do not abandon the way.
 
-The fate of a tool is to be used. Should the carpenter abdicate their craft because some fascists sleep in beds? The carpenter can choose who to deal with, as developers can use license cooperatives to collectively elect into issuing commercial licenses, but fascists will still sleep in beds. Best then to keep them from sleeping at all.
+The fate of a tool is to be used. Should the carpenter abdicate their craft because some fascists sleep in beds? The carpenter can choose who to deal with, as developers can elect into issuing commercial licenses, but fascists will still sleep in beds. Best then to keep them from sleeping at all.
 
 ## Fighting the Browser
 
