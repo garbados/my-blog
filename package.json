@@ -1,0 +1,39 @@
+{
+  "name": "garbados-blog",
+  "description": "Words as thought by meat.",
+  "homepage": "https://garbados.github.io/my-blog",
+  "version": "1.0.0-beta",
+  "private": true,
+  "scripts": {
+    "start": "npm run build",
+    "test": "npm run build && npm audit",
+    "prebuild": "mkdir -p static fonts",
+    "build": "run-p build:*",
+    "build:html": "./bin.js build",
+    "build:rss": "./bin.js rss",
+    "build:scss": "node-sass src/scss/style.scss static/style.css",
+    "build:fonts": "cp node_modules/font-awesome/fonts/* fonts/",
+    "build:images": "cp src/img/* static/",
+    "new-entry": "./bin.js new-entry",
+    "clean": "rm entries/*.md *.html; npm run build",
+    "watch": "watch 'npm run build' src entries",
+    "share": "npx dat share ."
+  },
+  "keywords": [
+    "blog"
+  ],
+  "author": "Diana Thayer <garbados@gmail.com>",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "bulma": "^0.8.0",
+    "flatpages": "^0.2.4",
+    "font-awesome": "^4.7.0",
+    "handlebars": "^4.7.6",
+    "marked": "^0.8.0",
+    "node-sass": "^5.0.0",
+    "npm-run-all": "^4.1.5",
+    "rss": "^1.2.2",
+    "watch": "^1.0.2",
+    "yargs": "^16.1.1"
+  }
+}
