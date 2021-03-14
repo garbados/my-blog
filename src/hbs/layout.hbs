@@ -7,6 +7,9 @@
   <title>{{config.title}}</title>
 
   <link rel="stylesheet" href="static/style.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
 </head>
 <body>
   <section class="section">
@@ -43,9 +46,7 @@
             </ul>
           </aside>
         </div>
-        <div class="column is-four-fifths">
-          {{> @partial-block }}
-        </div>
+        <div class="column is-four-fifths">{{> @partial-block }}</div>
       </div>
     </div>
   </section>

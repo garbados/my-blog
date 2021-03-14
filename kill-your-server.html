@@ -7,6 +7,9 @@
   <title>W O R D S</title>
 
   <link rel="stylesheet" href="static/style.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
 </head>
 <body>
   <section class="section">
@@ -44,134 +47,131 @@
             </ul>
           </aside>
         </div>
-        <div class="column is-four-fifths">
-              <div class="box">
-                <p>
-                  <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
-                  &gt;
-                  <a href="kill-your-server.html">Kill Your Server And Get Back To Bed</a>
-                </p>
-                <hr>
-                <div class="content">
-                  <h1 id="kill-your-server-and-get-back-to-bed-patterns-for-serverless-applications">Kill Your Server And Get Back To Bed: Patterns for Serverless Applications</h1>
-          <p>(Title inspired by <a href="https://www.youtube.com/watch?v=qWWrOKqget4">Nobody Beats The Drum - &quot;Quit Your Job&quot;</a>)</p>
-          <p>There&#39;s a lot of talk about &quot;serverless&quot; tech and most of it is bunk, so I want to kill the hype and talk to you about patterns. Rather than eliminate the work of maintaining and administrating a server, tech like Amazon&#39;s <a href="https://serverless.com/">serverless platform</a> just locks you into using their servers. By comparison, content served over peer-to-peer networks like <a href="https://datproject.org/">Dat</a> and <a href="https://ipfs.io/">IPFS</a> rely on shared neutral infrastructure like <a href="https://www.npmjs.com/package/bittorrent-dht">Bittorrent DHT trackers</a> such that an individual can serve web applications through them without needing to themselves maintain or administrate a server.</p>
-          <p>When I say <em>serverless</em> I mean that your application works entirely on the client. To the server, it&#39;s just some files. This keeps you out of being locked into particular server technologies (like Django or Ruby on Rails) or vendors (like AWS), and allows you to syndicate the application through P2P networks. Additionally, centering functionality on the client means a loss of network connectivity won&#39;t break the app, a feature sometimes called <a href="https://neighbourhood.ie/offline-first/">Offline First</a>.</p>
-          <p>However, for web applications, there are some downsides:</p>
-          <ul>
-          <li>All your app logic has to be done in JavaScript, or something that compiles to JS like TypeScript. If a user has JS disabled, the app can&#39;t function at all.</li>
-          <li>All user data lives in the user&#39;s browser. Browser storage is notoriously ephemeral, making it important that a user be able to import and export their data to infrastructure they can trust. If your app doesn&#39;t store anything, this isn&#39;t a problem.</li>
-          <li>Without a central server to coordinate authentication and authorization, complex social applications become significantly more complicated. If your app doesn&#39;t require auth, this isn&#39;t a problem.</li>
-          </ul>
-          <p>As an example, let&#39;s consider a blogging application where users can write entries, publish them to a public page, and follow other blogs. I&#39;ll cover how to store data, how to create import / export relationships with neutral infrastructure, and how to implement social features using <a href="https://beakerbrowser.com/">Beaker</a>&#39;s <a href="https://beakerbrowser.com/docs/apis/dat">DatArchive</a> API.</p>
-          <h2 id="storing-data-in-the-client">Storing data in the client</h2>
-          <p>I use <a href="https://pouchdb.com/">PouchDB</a> to store data in the client. It acts as a wrapper around whatever storage mechanism the browser supports and mirrors the API used by CouchDB. Saving an entry works like this:</p>
-          <pre><code class="language-javascript">
-          const db = new PouchDB(&#39;blog&#39;)
-          const entry = { _id: `entry:${uuid()}`, ... }
-          const { id: entryId } = await db.put(entry)</code></pre>
-          <p>Then, to retrieve it:</p>
-          <pre><code class="language-javascript">
-          const entry = await db.get(entryId)</code></pre>
-          <p>PouchDB comes with a &quot;primary index&quot; which sorts documents by their <code>_id</code>, allowing you to perform queries against that sorted list. As a result, I&#39;ve prefaced the entry&#39;s ID with <code>entry:</code> so that it can be found quickly without a custom index. To retrieve all entries, we select all documents whose IDs start with <code>entry:</code>:</p>
-          <pre><code class="language-javascript">
-          const { rows } = await db.allDocs({
-            include_docs: true,
-            startkey: &#39;entry:&#39;,
-            endkey: &#39;entry:\uffff&#39;
-          })
-          const entries = rows.map(({ doc }) =&gt; { return doc })</code></pre>
-          <p>In this case, we use <code>startkey</code> and <code>endkey</code> to select only documents whose IDs start with <code>entry:</code>. The unicode character <code>\uffff</code> is used in the endkey as it will sort after any UUID.</p>
-          <p>To paginate this data, use the <code>limit</code> option to set a maximum number of results. Then, to retrieve the next page, set the startkey to the highest ID found in your initial query. For example:</p>
-          <pre><code class="language-javascript">
-          // get the first page
-          const { rows: firstPage } = await db.allDocs({
-            limit: 20,
-            include_docs: true,
-            startkey: &#39;entry:&#39;,
-            endkey: &#39;entry:\uffff&#39;
-          })
-          const entries = firstPage.map(({ doc }) =&gt; { return doc })
-          // get the second page
-          const highestId = entries.map(({ _id }) =&gt; { return _id }).reduce((a, b) =&gt; { return a &gt; b ? a : b })
-          const { rows: nextPage } = await db.allDocs({
-            limit: 20,
-            include_docs: true,
-            startkey: highestId,
-            endkey: &#39;entry:\uffff&#39;
-          })
-          const nextEntries = nextPage.map(({ doc }) =&gt; { return doc })</code></pre>
-          <p>Rinse and repeat to paginate through the whole set.</p>
-          <h2 id="securing-and-preserving-user-data">Securing and preserving user data</h2>
-          <p>If the user wipes their browser cache, they&#39;ll lose all their entries. To give it a secure home, they&#39;ll need to offload it somewhere that will keep it safe. Traditionally this means the application server, which dumps every entry into a database that administrators can peruse freely. Instead, a serverless app using PouchDB can rely on generic infrastructure like <a href="http://couchdb.apache.org/">CouchDB</a> for imports and exports.</p>
-          <p>PouchDB and CouchDB share a <a href="http://docs.couchdb.org/en/stable/replication/index.html">robust replication protocol</a> that allows them to sync data back and forth. In a simple scenario, you could run a CouchDB installation on your local machine and then have a serverless app replicate your data to it. Your data still only lives on hardware you control, but now it can be restored if the browser&#39;s storage gets wiped. Here is an example that replicates once to a local CouchDB, creating a snapshot backup:</p>
-          <pre><code class="language-javascript">
-          await db.replicate.to(&#39;http://localhost:5984&#39;)</code></pre>
-          <p>Here is how to restore browser storage from that backup:</p>
-          <pre><code class="language-javascript">
-          await db.replicate.from(&#39;http://localhost:5984&#39;)</code></pre>
-          <p>This is fine if you have a CouchDB installation, but if you&#39;re relying on someone else&#39;s then you&#39;ll want to encrypt your backup so that database administrators can&#39;t read your entries. For this, I use <a href="https://github.com/garbados/comdb">ComDB</a>, a PouchDB plugin that transparently encrypts and decrypts any replications. This way, your data remains unencrypted in the browser so that you can query it normally, but it&#39;s obfuscated when replicated elsewhere, and unobfuscated when you replicate it back. To use ComDB for this, you&#39;ll need to set a password when you set up the database:</p>
-          <pre><code class="language-javascript">
-          const PouchDB = require(&#39;pouchdb&#39;)
-          PouchDB.plugin(require(&#39;comdb&#39;))
-          
-          const db = new PouchDB(&#39;blog&#39;)
-          db.setPassword(&#39;extremely secure value&#39;)</code></pre>
-          <p>If your user forgets their password, there&#39;s not much you can do. Without a privileged server to coordinate a &quot;Forgot Password&quot; workflow, the user is left to protect their password themselves.</p>
-          <h2 id="publishing-from-the-client">Publishing from the client</h2>
-          <p>Beaker&#39;s <a href="https://beakerbrowser.com/docs/apis/dat">DatArchive</a> web API allows a program to create and manipulate <a href="https://datproject.org/">Dat</a> archives, which can be shared over neutral P2P infrastructure with other users. This archive works just like a filesystem directory, so you can write files to it and then publish it to the network. Anyone with the address of your page can then visit it as long as you&#39;re broadcasting it. For more uptime, you can use a dedicated peer service like <a href="https://hashbase.io/">hashbase</a> to make sure someone is always peering the archive.</p>
-          <p>To create a public page for your blog, the application will template user data and create a static site by writing HTML files to an archive. For this example, I&#39;ll use <a href="http://handlebarsjs.com/">handlebars</a>:</p>
-          <pre><code class="language-javascript">
-          // create the archive
-          const archive = await DatArchive.create({
-            title: &#39;My blog!&#39;,
-            description: &#39;A blog by me!&#39;
-          })
-          // get the template from the app&#39;s DOM
-          const source   = document.getElementById(&quot;public-entries-template&quot;).innerHTML
-          const template = Handlebars.compile(source)
-          // template each entry into what will be the index.html
-          const indexHtml = template(entries)
-          // write the file to the archive
-          await archive.writeFile(&#39;/index.html&#39;, indexHtml, &#39;utf-8&#39;)</code></pre>
-          <p>Now anyone can visit that archive&#39;s URL (accessible as the archive&#39;s <a href="https://beakerbrowser.com/docs/apis/dat#properties">url</a> property) to see a public version of your blog. Although this blogging application relies heavily on JavaScript, the public version can just be static HTML and CSS. You can even use this templating approach to publish an RSS feed for your blog!</p>
-          <p>Because of how Dat handles archive ownership, only you can update your blog&#39;s public version. Beaker automatically stores the credentials -- a cryptographic keypair -- required to assert yourself as its owner. If you lose that keypair somehow, you&#39;ll need to regenerate the archive at a new address if you want to modify it.</p>
-          <h2 id="following-other-blogs">Following other blogs</h2>
-          <p>Just as you can template your entries and publish them as HTML, you can also serialize your entries into JSON and share that. If you gave this entries archive URL to another user, they could then download and interpret the JSON into its constituent entries.</p>
-          <p>Here&#39;s how to serialize and publish your entries:</p>
-          <pre><code class="language-javascript">
-          // get all your entries
-          const { rows } = await db.allDocs({
-            include_docs: true,
-            startkey: &#39;entry:&#39;,
-            endkey: &#39;entry:\uffff&#39;
-          })
-          const entries = rows.map(({ doc }) =&gt; { return doc })
-          // create the archive itself
-          const archive = await DatArchive.create({
-            title: &#39;My blog entries!&#39;,
-            description: &#39;The entries in my blog as a JSON array!&#39;
-          })
-          archive.writeFile(&#39;/entries.json&#39;, JSON.stringify(entries), &#39;utf-8&#39;)</code></pre>
-          <p>Given the URL to this archive, here is how another user could download those entries:</p>
-          <pre><code class="language-javascript">
-          const archive = await DatArchive.load(archiveUrl)
-          const rawEntries = await archive.readFile(&#39;/entries.json&#39;, &#39;utf-8&#39;)
-          const entries = JSON.parse(rawEntries).map((entry) =&gt; {
-            entry._id = `remote:${archiveUrl}:${entry._id}`
-            return entry
-          })
-          await db.bulkDocs(entries, { new_edits: false })</code></pre>
-          <p>In this example, the receiving user modifies each entry&#39;s ID to reflect its source, allowing them to distinguish between their own entries and entries downloaded from others without creating a special query index. The <code>{ new_edits: false }</code> option tells PouchDB to treat the documents as if they&#39;ve been replicated over from another database. In this way, it works like replicating with a Dat Archive instead of a CouchDB installation.</p>
-          <p>Although I don&#39;t have example code for this, it&#39;s possible to implement asymmetric crypto over this sharing process (such as with <a href="https://github.com/rzcoder/node-rsa">node-rsa</a>) so that even if the URL of your entries archive falls into the wrong hands, only authorized users can discern the contents.</p>
-          <h2 id="outro">Outro</h2>
-          <p>This approach to web applications has only become possible as the JavaScript and P2P ecosystems have matured. These practices continue to evolve, and the tooling that facilitates them improves all the time. Applications like <a href="https://github.com/beakerbrowser/fritter#fritter">Fritter</a> implement many of these practices, including <a href="https://github.com/beakerbrowser/dat-identities-spec">complex identity systems</a> that do not rely on central authorities. Some of the more basic elements, like storing data using PouchDB, can be found in my <a href="https://github.com/garbados/chaiseblog">chaiseblog</a> diary app.</p>
-          <p>If you&#39;d like help implementing an architecture like this in your application, please <a href="https://toot.cat/@garbados">reach out</a>. I&#39;m happy to provide guidance and answer questions.</p>
-                </div>
-                <hr>
-                <p><small><em>October 26, 2018</em></small></p>
-              </div>
-        </div>
+        <div class="column is-four-fifths">    <div class="box">
+      <p>
+        <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
+        &gt;
+        <a href="kill-your-server.html">Kill Your Server And Get Back To Bed</a>
+      </p>
+      <hr>
+      <div class="content"><h1 id="kill-your-server-and-get-back-to-bed-patterns-for-serverless-applications">Kill Your Server And Get Back To Bed: Patterns for Serverless Applications</h1>
+<p>(Title inspired by <a href="https://www.youtube.com/watch?v=qWWrOKqget4">Nobody Beats The Drum - &quot;Quit Your Job&quot;</a>)</p>
+<p>There&#39;s a lot of talk about &quot;serverless&quot; tech and most of it is bunk, so I want to kill the hype and talk to you about patterns. Rather than eliminate the work of maintaining and administrating a server, tech like Amazon&#39;s <a href="https://serverless.com/">serverless platform</a> just locks you into using their servers. By comparison, content served over peer-to-peer networks like <a href="https://datproject.org/">Dat</a> and <a href="https://ipfs.io/">IPFS</a> rely on shared neutral infrastructure like <a href="https://www.npmjs.com/package/bittorrent-dht">Bittorrent DHT trackers</a> such that an individual can serve web applications through them without needing to themselves maintain or administrate a server.</p>
+<p>When I say <em>serverless</em> I mean that your application works entirely on the client. To the server, it&#39;s just some files. This keeps you out of being locked into particular server technologies (like Django or Ruby on Rails) or vendors (like AWS), and allows you to syndicate the application through P2P networks. Additionally, centering functionality on the client means a loss of network connectivity won&#39;t break the app, a feature sometimes called <a href="https://neighbourhood.ie/offline-first/">Offline First</a>.</p>
+<p>However, for web applications, there are some downsides:</p>
+<ul>
+<li>All your app logic has to be done in JavaScript, or something that compiles to JS like TypeScript. If a user has JS disabled, the app can&#39;t function at all.</li>
+<li>All user data lives in the user&#39;s browser. Browser storage is notoriously ephemeral, making it important that a user be able to import and export their data to infrastructure they can trust. If your app doesn&#39;t store anything, this isn&#39;t a problem.</li>
+<li>Without a central server to coordinate authentication and authorization, complex social applications become significantly more complicated. If your app doesn&#39;t require auth, this isn&#39;t a problem.</li>
+</ul>
+<p>As an example, let&#39;s consider a blogging application where users can write entries, publish them to a public page, and follow other blogs. I&#39;ll cover how to store data, how to create import / export relationships with neutral infrastructure, and how to implement social features using <a href="https://beakerbrowser.com/">Beaker</a>&#39;s <a href="https://beakerbrowser.com/docs/apis/dat">DatArchive</a> API.</p>
+<h2 id="storing-data-in-the-client">Storing data in the client</h2>
+<p>I use <a href="https://pouchdb.com/">PouchDB</a> to store data in the client. It acts as a wrapper around whatever storage mechanism the browser supports and mirrors the API used by CouchDB. Saving an entry works like this:</p>
+<pre><code class="language-javascript">
+const db = new PouchDB(&#39;blog&#39;)
+const entry = { _id: `entry:${uuid()}`, ... }
+const { id: entryId } = await db.put(entry)</code></pre>
+<p>Then, to retrieve it:</p>
+<pre><code class="language-javascript">
+const entry = await db.get(entryId)</code></pre>
+<p>PouchDB comes with a &quot;primary index&quot; which sorts documents by their <code>_id</code>, allowing you to perform queries against that sorted list. As a result, I&#39;ve prefaced the entry&#39;s ID with <code>entry:</code> so that it can be found quickly without a custom index. To retrieve all entries, we select all documents whose IDs start with <code>entry:</code>:</p>
+<pre><code class="language-javascript">
+const { rows } = await db.allDocs({
+  include_docs: true,
+  startkey: &#39;entry:&#39;,
+  endkey: &#39;entry:\uffff&#39;
+})
+const entries = rows.map(({ doc }) =&gt; { return doc })</code></pre>
+<p>In this case, we use <code>startkey</code> and <code>endkey</code> to select only documents whose IDs start with <code>entry:</code>. The unicode character <code>\uffff</code> is used in the endkey as it will sort after any UUID.</p>
+<p>To paginate this data, use the <code>limit</code> option to set a maximum number of results. Then, to retrieve the next page, set the startkey to the highest ID found in your initial query. For example:</p>
+<pre><code class="language-javascript">
+// get the first page
+const { rows: firstPage } = await db.allDocs({
+  limit: 20,
+  include_docs: true,
+  startkey: &#39;entry:&#39;,
+  endkey: &#39;entry:\uffff&#39;
+})
+const entries = firstPage.map(({ doc }) =&gt; { return doc })
+// get the second page
+const highestId = entries.map(({ _id }) =&gt; { return _id }).reduce((a, b) =&gt; { return a &gt; b ? a : b })
+const { rows: nextPage } = await db.allDocs({
+  limit: 20,
+  include_docs: true,
+  startkey: highestId,
+  endkey: &#39;entry:\uffff&#39;
+})
+const nextEntries = nextPage.map(({ doc }) =&gt; { return doc })</code></pre>
+<p>Rinse and repeat to paginate through the whole set.</p>
+<h2 id="securing-and-preserving-user-data">Securing and preserving user data</h2>
+<p>If the user wipes their browser cache, they&#39;ll lose all their entries. To give it a secure home, they&#39;ll need to offload it somewhere that will keep it safe. Traditionally this means the application server, which dumps every entry into a database that administrators can peruse freely. Instead, a serverless app using PouchDB can rely on generic infrastructure like <a href="http://couchdb.apache.org/">CouchDB</a> for imports and exports.</p>
+<p>PouchDB and CouchDB share a <a href="http://docs.couchdb.org/en/stable/replication/index.html">robust replication protocol</a> that allows them to sync data back and forth. In a simple scenario, you could run a CouchDB installation on your local machine and then have a serverless app replicate your data to it. Your data still only lives on hardware you control, but now it can be restored if the browser&#39;s storage gets wiped. Here is an example that replicates once to a local CouchDB, creating a snapshot backup:</p>
+<pre><code class="language-javascript">
+await db.replicate.to(&#39;http://localhost:5984&#39;)</code></pre>
+<p>Here is how to restore browser storage from that backup:</p>
+<pre><code class="language-javascript">
+await db.replicate.from(&#39;http://localhost:5984&#39;)</code></pre>
+<p>This is fine if you have a CouchDB installation, but if you&#39;re relying on someone else&#39;s then you&#39;ll want to encrypt your backup so that database administrators can&#39;t read your entries. For this, I use <a href="https://github.com/garbados/comdb">ComDB</a>, a PouchDB plugin that transparently encrypts and decrypts any replications. This way, your data remains unencrypted in the browser so that you can query it normally, but it&#39;s obfuscated when replicated elsewhere, and unobfuscated when you replicate it back. To use ComDB for this, you&#39;ll need to set a password when you set up the database:</p>
+<pre><code class="language-javascript">
+const PouchDB = require(&#39;pouchdb&#39;)
+PouchDB.plugin(require(&#39;comdb&#39;))
+
+const db = new PouchDB(&#39;blog&#39;)
+db.setPassword(&#39;extremely secure value&#39;)</code></pre>
+<p>If your user forgets their password, there&#39;s not much you can do. Without a privileged server to coordinate a &quot;Forgot Password&quot; workflow, the user is left to protect their password themselves.</p>
+<h2 id="publishing-from-the-client">Publishing from the client</h2>
+<p>Beaker&#39;s <a href="https://beakerbrowser.com/docs/apis/dat">DatArchive</a> web API allows a program to create and manipulate <a href="https://datproject.org/">Dat</a> archives, which can be shared over neutral P2P infrastructure with other users. This archive works just like a filesystem directory, so you can write files to it and then publish it to the network. Anyone with the address of your page can then visit it as long as you&#39;re broadcasting it. For more uptime, you can use a dedicated peer service like <a href="https://hashbase.io/">hashbase</a> to make sure someone is always peering the archive.</p>
+<p>To create a public page for your blog, the application will template user data and create a static site by writing HTML files to an archive. For this example, I&#39;ll use <a href="http://handlebarsjs.com/">handlebars</a>:</p>
+<pre><code class="language-javascript">
+// create the archive
+const archive = await DatArchive.create({
+  title: &#39;My blog!&#39;,
+  description: &#39;A blog by me!&#39;
+})
+// get the template from the app&#39;s DOM
+const source   = document.getElementById(&quot;public-entries-template&quot;).innerHTML
+const template = Handlebars.compile(source)
+// template each entry into what will be the index.html
+const indexHtml = template(entries)
+// write the file to the archive
+await archive.writeFile(&#39;/index.html&#39;, indexHtml, &#39;utf-8&#39;)</code></pre>
+<p>Now anyone can visit that archive&#39;s URL (accessible as the archive&#39;s <a href="https://beakerbrowser.com/docs/apis/dat#properties">url</a> property) to see a public version of your blog. Although this blogging application relies heavily on JavaScript, the public version can just be static HTML and CSS. You can even use this templating approach to publish an RSS feed for your blog!</p>
+<p>Because of how Dat handles archive ownership, only you can update your blog&#39;s public version. Beaker automatically stores the credentials -- a cryptographic keypair -- required to assert yourself as its owner. If you lose that keypair somehow, you&#39;ll need to regenerate the archive at a new address if you want to modify it.</p>
+<h2 id="following-other-blogs">Following other blogs</h2>
+<p>Just as you can template your entries and publish them as HTML, you can also serialize your entries into JSON and share that. If you gave this entries archive URL to another user, they could then download and interpret the JSON into its constituent entries.</p>
+<p>Here&#39;s how to serialize and publish your entries:</p>
+<pre><code class="language-javascript">
+// get all your entries
+const { rows } = await db.allDocs({
+  include_docs: true,
+  startkey: &#39;entry:&#39;,
+  endkey: &#39;entry:\uffff&#39;
+})
+const entries = rows.map(({ doc }) =&gt; { return doc })
+// create the archive itself
+const archive = await DatArchive.create({
+  title: &#39;My blog entries!&#39;,
+  description: &#39;The entries in my blog as a JSON array!&#39;
+})
+archive.writeFile(&#39;/entries.json&#39;, JSON.stringify(entries), &#39;utf-8&#39;)</code></pre>
+<p>Given the URL to this archive, here is how another user could download those entries:</p>
+<pre><code class="language-javascript">
+const archive = await DatArchive.load(archiveUrl)
+const rawEntries = await archive.readFile(&#39;/entries.json&#39;, &#39;utf-8&#39;)
+const entries = JSON.parse(rawEntries).map((entry) =&gt; {
+  entry._id = `remote:${archiveUrl}:${entry._id}`
+  return entry
+})
+await db.bulkDocs(entries, { new_edits: false })</code></pre>
+<p>In this example, the receiving user modifies each entry&#39;s ID to reflect its source, allowing them to distinguish between their own entries and entries downloaded from others without creating a special query index. The <code>{ new_edits: false }</code> option tells PouchDB to treat the documents as if they&#39;ve been replicated over from another database. In this way, it works like replicating with a Dat Archive instead of a CouchDB installation.</p>
+<p>Although I don&#39;t have example code for this, it&#39;s possible to implement asymmetric crypto over this sharing process (such as with <a href="https://github.com/rzcoder/node-rsa">node-rsa</a>) so that even if the URL of your entries archive falls into the wrong hands, only authorized users can discern the contents.</p>
+<h2 id="outro">Outro</h2>
+<p>This approach to web applications has only become possible as the JavaScript and P2P ecosystems have matured. These practices continue to evolve, and the tooling that facilitates them improves all the time. Applications like <a href="https://github.com/beakerbrowser/fritter#fritter">Fritter</a> implement many of these practices, including <a href="https://github.com/beakerbrowser/dat-identities-spec">complex identity systems</a> that do not rely on central authorities. Some of the more basic elements, like storing data using PouchDB, can be found in my <a href="https://github.com/garbados/chaiseblog">chaiseblog</a> diary app.</p>
+<p>If you&#39;d like help implementing an architecture like this in your application, please <a href="https://toot.cat/@garbados">reach out</a>. I&#39;m happy to provide guidance and answer questions.</p></div>
+      <hr>
+      <p><small><em>October 26, 2018</em></small></p>
+    </div>
+</div>
       </div>
     </div>
   </section>
