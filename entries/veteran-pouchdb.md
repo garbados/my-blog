@@ -63,7 +63,7 @@ const db = new PouchDB(DB_PATH)
 
 This is useful when you already have a database in CouchDB with lots of data, and you want to explore that data with the fallback of marshaling it yourself.
 
-Now, for example's sake, let's consider an example application: a multi-user blog where documents in the database represent each user's individual posts. Let's see these documents using the [.allDocs()](https://pouchdb.com/api.html#batch_fetch) method:
+Now let's consider an example application: a multi-user blog where documents in the database represent each user's individual posts. Let's see these documents using the [.allDocs()](https://pouchdb.com/api.html#batch_fetch) method:
 
 ```javascript
 db.allDocs({ include_docs: true, limit: 1 })
@@ -140,7 +140,7 @@ db.allDocs({
 })
 ```
 
-Because PouchDB sorts IDs alphabetically, we can use high-value unicode characters to define specific key ranges to return. I use the character `\ufff0` because it is the highest valid unicode character. Here we use it to return all entries by a specific user:
+Because PouchDB sorts IDs lexicographically, we can use high-value unicode characters to define specific key ranges to return. I use the character `\ufff0` because it is the highest valid unicode character. Here we use it to return all entries by a specific user:
 
 ```javascript
 db.allDocs({

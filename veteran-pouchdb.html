@@ -89,7 +89,7 @@ const DB_PATH = COUCH_URL
   : DB_NAME
 const db = new PouchDB(DB_PATH)</code></pre>
 <p>This is useful when you already have a database in CouchDB with lots of data, and you want to explore that data with the fallback of marshaling it yourself.</p>
-<p>Now, for example&#39;s sake, let&#39;s consider an example application: a multi-user blog where documents in the database represent each user&#39;s individual posts. Let&#39;s see these documents using the <a href="https://pouchdb.com/api.html#batch_fetch">.allDocs()</a> method:</p>
+<p>Now let&#39;s consider an example application: a multi-user blog where documents in the database represent each user&#39;s individual posts. Let&#39;s see these documents using the <a href="https://pouchdb.com/api.html#batch_fetch">.allDocs()</a> method:</p>
 <pre><code class="language-javascript">db.allDocs({ include_docs: true, limit: 1 })
   .then((result) =&gt; {
     console.log(result)
@@ -154,7 +154,7 @@ db.allDocs({
   // all users
   console.log(result)
 })</code></pre>
-<p>Because PouchDB sorts IDs alphabetically, we can use high-value unicode characters to define specific key ranges to return. I use the character <code>\ufff0</code> because it is the highest valid unicode character. Here we use it to return all entries by a specific user:</p>
+<p>Because PouchDB sorts IDs lexicographically, we can use high-value unicode characters to define specific key ranges to return. I use the character <code>\ufff0</code> because it is the highest valid unicode character. Here we use it to return all entries by a specific user:</p>
 <pre><code class="language-javascript">db.allDocs({
   startkey: &#39;entry:garbados&#39;,
   endkey: &#39;entry:garbados:\ufff0&#39;,
