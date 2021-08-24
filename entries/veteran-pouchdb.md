@@ -8,7 +8,7 @@ created_at: 2021-03-14T20:51:06.023Z
 
 # A Veteran's Guide to PouchDB
 
-I have written a great deal of software, from web applications to SaaS products (from inception to long-term maintenance) to a litany of database tools, and most of what I have to show for it is bitterness and trauma. I never want anyone to feel as lost and helpless and burnt out as I have; I would rather programmers feel the quiet dignity and insistent ethos of civil servants, because our works are so akin to public infrastructure. The discipline is [in a bad way](https://garbados.github.io/my-blog/regarding-software.html) but it is still important to understand how to use the right tools for the right application. We owe that much to users, and to each other as craftspeople.
+I have written a great deal of software, and most of what I have to show for it is bitterness and trauma. I never want anyone to feel as lost and helpless and burnt out as I have; I would rather programmers feel the quiet dignity and insistent ethos of civil servants, because our works are so akin to public infrastructure. The discipline is [in a bad way](https://garbados.github.io/my-blog/regarding-software.html) but it is still important to understand how to use the right tools for the right application. We owe that much to users, and to each other as craftspeople.
 
 This guide is intended for people with moderate experience with JavaScript, as well as people who have worked with databases much at all, though I hope anyone intending to write software might find its architectural considerations useful.
 
