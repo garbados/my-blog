@@ -752,7 +752,7 @@ Next, let's talk about how to model your application's data in order to facilita
 
 It is often tempting to imagine you will maintain only a few types of documents, and contain everything your application needs within them. For example, you might have a status document, which contains a user's account info as well as a list of tags and media URLs. Or you might have a forum thread, and each reply is contained within its parent status document. The trouble with this architecture is that documents which belong to many sources, such as a forum thread that many users will write to, are prone to generating conflicts and the experience of data loss.
 
-In CouchDB and PouchDB the atomic unit is the document. That is, the canonical source of truth for a datapoint is the document that contains it. Whenever you update a document, you must provide a revision value, to prove to the database which version you want to update. If you try to update a version before the latest one, the database will generate a "conflict" that will not appear to users or be indexed by any view. Essentially, to the user, their write appears to have succeeded even as it effectively vanished. These conflicts can clutter a database, reducing performance and creating considerable resource requirements. So, it is crucial to architect against them.
+In CouchDB and PouchDB the atomic unit is the document. That is, the canonical source of truth for a datapoint is the document that contains it. Whenever you update a document, you must provide a revision value, to prove to the database which version you want to update. If you try to update a version before the latest one, the database might generate a "conflict" that will not appear to users or be indexed by any view. Essentially, to the user, their write appears to have succeeded even as it effectively vanished. These conflicts can clutter a database, reducing performance and creating considerable resource requirements. So, it is crucial to architect against them.
 
 As a rule, each document should only have one writer. Perhaps this means a user account, but what if the user has multiple devices? That can cause conflicts too. So you should scope documents to the most basic agent that writes data. In this case, the device itself. You can then aggregate data using replication, for example to sync data across a user's devices.
 
@@ -784,11 +784,13 @@ class ChitterStatuses extends PouchDB {
               // doc._id of original: status:${userId}:${deviceId}:${createdAt}:${suffix}
               // of edit: ${originalId}:edit:${deviceId2}:${updatedAt}:${suffix2}
               emit([doc.original_id || doc._id, doc.updatedAt || doc.createdAt])
-            }
+            }.toString()
           },
           'status-media': {
-            if (doc.type !== 'media') { return }
-            emit(doc.status_id)
+            map: function (doc) {
+              if (doc.type !== 'media') { return }
+              emit(doc.status_id)  
+            }.toString()
           }
         }
       })
