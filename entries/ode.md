@@ -8,7 +8,7 @@ created_at: 2023-01-24T18:24:38.129Z
 
 (I first wrote this poem in 2019. Presented here without further comment.)
 
-```
+```markdown
 A thousand years of terror
 Pass through your belly,
 Restored at last to soil.
