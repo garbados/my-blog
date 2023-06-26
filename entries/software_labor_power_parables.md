@@ -16,7 +16,7 @@ Our clever folk are not without ideas. They think, we could make a product. Rath
 
 At first the effort is intriguing and engaging. Experienced professionals are given green fields to explore and develop, and they flourish there, flexing architectural skills they have spent many years nurturing. Early on, it is easy to refactor, redesign, and adapt to changing requirements, but their small pool of labor and expertise struggles with its gaps. Accounting, deployment, design, documentation, maintenance -- the scale of the work blossoms beyond their means.
 
-Six months later and they have a prototype, but no clients, and no paywall. The paywall, it becomes clear, is itself an overwhelming task prone to problems with borders, sanctions, taxes, and so on. Six more months and it seems it's all they've worked on. Prospective clients have shown sparing desire for this product after all, intrigued in theory but offering worse margins than for custom service. One begins to feel they threw yet another year in the trash.
+Six months later and they have a prototype, but no clients and no paywall. The paywall, it becomes clear, is itself an overwhelming task prone to problems with borders, sanctions, taxes, and so on. Six more months and it seems it's all they've worked on. Prospective clients have shown sparing desire for this product after all, intrigued in theory but offering worse margins than for custom service. One begins to feel they threw yet another year in the trash.
 
 In the end the service is humbly shuttered. Before that, ties between overworked colleagues become frayed. Some among the team leave for better-paying pastures, soured by the stress of the ordeal. Others learn nothing, and project yet more hubris into dreams of hockey sticks and better margins.
 
@@ -32,7 +32,7 @@ Development stalls. The community loses interest or becomes impatient. The initi
 
 Eventually the initial maintainer walks away. They need time to recuperate, though this leaves the project disorganized and virtually without any committed labor. Other core volunteers peel off for similar reasons. Much as they respect and admire the concept and the legitimate need for it, they have other things to do. Bills to pay, a family to raise, a life to live. Things they are not willing to sacrifice as a volunteer making software.
 
-It takes years for the most involved to return from burnout. They lose hobbies, relationships, opportunities... sometimes even the will to live. What survives is jaded and hesitant. Burned. They return to the work hesitantly, if at all.
+It takes years for the most involved to return from burnout. They lose hobbies, relationships, opportunities... sometimes even the will to live. What survives is jaded and burned. They return to the work hesitantly, if at all.
 
 The community goes on, underserved and misrepresented.
 
@@ -40,9 +40,9 @@ The community goes on, underserved and misrepresented.
 
 Another frustrating meeting dispirits an engineer. They are unheard, unseen, uncared for. The fruits of their labor are gobbled up by profiteers that prove increasingly untrustworthy. Teammates whisper of their shared dissatisfaction. Complaints and appeals fizzle in HR. With phones left behind, a small group brews an ambitious plot: to unionize.
 
-Secretly, they meet with representatives of labor federations and other unions, seeking guidance and resources. They intend someday to hold a vote to form a union, to force management to recognize their demands with the NLRB's support. A pseudonymous Twitter account rallies interest. Through measured words, they appeal to their colleagues to recognize their power as laborers and to protect it by organizing. Famously clueless bootlickers fill their mentions, even including some of those at their company.
+Secretly, they meet with representatives of labor federations and other unions, seeking guidance and resources. They intend someday to hold a vote to form a union, to force management to recognize their demands with the law's support. A pseudonymous social media account rallies interest. Through measured words, they appeal to their colleagues to recognize their power as laborers and to protect it by organizing. Famously clueless bootlickers fill their mentions, even including some of those at their company.
 
-Despite all their precautions, before long they are found out. Management intensifies their scrutiny over those suspected of involvement, and enforces requirements heretofore unspoken. Some of the organizers are laid off under trumped-up pretenses of lacking productivity or improper procedure. Though word spreads fast in support of the wronged, they are nevetheless fired. The NLRB stays silent as the unionization effort grows into a protracted and contentious conflict.
+Despite all their precautions, before long they are found out. Management intensifies their scrutiny over those suspected of involvement, and enforces requirements heretofore unspoken. Some of the organizers are laid off under trumped-up pretenses of lacking productivity or improper procedure. Though word spreads fast in support of the wronged, they are nevetheless fired. The law stays silent as the unionization effort grows into a protracted and contentious conflict.
 
 Those who remain at the company must exercise ever-growing care in approaching others about the matter, and those approached silently consider the danger of saying or even hearing such words. The would-be union's social media presence proves prone to virality, but the company's internal culture grows increasingly paranoid and controlling; thunderous light and sound goes silent in company channels. A successful vote for unionization, if it will ever happen, begins to feel very, very far off.
 
