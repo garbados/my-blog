@@ -5,35 +5,35 @@
   "version": "1.0.0-beta",
   "private": true,
   "scripts": {
-    "start": "npm run build",
+    "start": "npm run build && serve public",
     "test": "npm run build && npm audit",
     "prebuild": "mkdir -p static fonts",
     "build": "run-p build:*",
     "build:html": "./bin.js build",
     "build:rss": "./bin.js rss",
-    "build:scss": "node-sass src/scss/style.scss static/style.css",
-    "build:fonts": "cp node_modules/font-awesome/fonts/* fonts/",
-    "build:images": "cp src/img/* static/",
+    "build:scss": "sass -I node_modules src/scss/style.scss public/css/style.css",
+    "build:fonts": "cp node_modules/font-awesome/fonts/* public/fonts/",
+    "build:images": "cp src/img/* public/img/",
     "new-entry": "./bin.js new-entry",
     "clean": "rm entries/*.md *.html; npm run build",
-    "watch": "watch 'npm run build' src entries",
-    "share": "npx dat share ."
+    "watch": "watch 'npm run build' src entries"
   },
   "keywords": [
     "blog"
   ],
-  "author": "Diana Thayer <garbados@gmail.com>",
+  "author": "Diana Belle <garbados@gmail.com>",
   "license": "GPL-3.0",
   "devDependencies": {
-    "bulma": "^0.9.4",
-    "flatpages": "^0.2.4",
+    "bulma": "^1.0.2",
     "font-awesome": "^4.7.0",
-    "handlebars": "^4.7.7",
-    "marked": "^4.2.3",
-    "node-sass": "^8.0.0",
+    "handlebars": "^4.7.8",
+    "js-yaml": "4.1.0",
+    "marked": "^14.1.3",
     "npm-run-all": "^4.1.5",
     "rss": "^1.2.2",
+    "sass": "^1.80.5",
+    "serve": "^14.2.4",
     "watch": "^1.0.2",
-    "yargs": "^17.6.2"
+    "yargs": "^17.7.2"
   }
 }
