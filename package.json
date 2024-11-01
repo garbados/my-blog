@@ -11,7 +11,7 @@
     "build": "run-p build:*",
     "build:html": "./bin.js build",
     "build:rss": "./bin.js rss",
-    "build:scss": "sass -I node_modules src/scss/style.scss public/css/style.css",
+    "build:scss": "sass -q -I node_modules src/scss/style.scss public/css/style.css",
     "build:fonts": "cp node_modules/font-awesome/fonts/* public/fonts/",
     "build:images": "cp src/img/* public/img/",
     "new-entry": "./bin.js new-entry",
