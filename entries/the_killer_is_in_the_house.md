@@ -80,7 +80,7 @@ The battle for this vacuum of governance is not chiefly one of martial conflict.
 
 Why does one read *The Mishomis Book* in English? Why does one not hear it spoken from one who has chosen to share it? These are compromises made in modernity for the sake of the sacred, and we must be careful to perceive how they color our words and spring savage traps.
 
-Russell Means, quoted in [*For America To Live, Europe Must Die*](https://theanarchistlibrary.org/library/russell-means-for-america-to-live-europe-must-die), speaks to this of even the written word itself:
+Russell Means, quoted in *[For America To Live, Europe Must Die](https://theanarchistlibrary.org/library/russell-means-for-america-to-live-europe-must-die)*, speaks to this of even the written word itself:
 
 > The only possible opening for a statement of this kind is that I detest writing. The process itself epitomizes the European concept of “legitimate” thinking; what is written has an importance that is denied the spoken. My culture, the Lakota culture, has an oral tradition, so I ordinarily reject writing. It is one of the white world's ways of destroying the cultures of non-European peoples, the imposing of an abstraction over the spoken relationship of a people.
 >
