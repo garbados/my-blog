@@ -8,7 +8,6 @@ created_at: 2023-01-24T18:24:38.129Z
 
 (I first wrote this poem in 2019. Presented here without further comment.)
 
-```markdown
 A thousand years of terror
 Pass through your belly,
 Restored at last to soil.
@@ -36,4 +35,3 @@ May the salt of my anguish
 Impart a fraction of my thanks,
 My relief, and my hope:
 That this evil shall stay buried.
-```

@@ -41,8 +41,6 @@ Thanks for reading.
 
 PS:
 
-
-```markdown
 You could call me a civil servant
 Of a government from the future.
 I am of the present,
@@ -95,4 +93,3 @@ Warmed with dire courage --
 A future worthy
 Of the innate dignity
 Of every living thing.
-```

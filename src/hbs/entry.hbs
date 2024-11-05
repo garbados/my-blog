@@ -1,15 +1,15 @@
 {{#> layout }}
   {{#with entry}}
     <div class="box">
+      <p><small><em>{{createdAt}}</em></small></p>
+      <hr>
+      <div class="content">{{{html}}}</div>
+      <hr>
       <p>
         <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
         &gt;
         <a href="{{name}}.html">{{title}}</a>
       </p>
-      <hr>
-      <div class="content">{{{html}}}</div>
-      <hr>
-      <p><small><em>{{createdAt}}</em></small></p>
     </div>
   {{/with}}
 {{/layout}}
