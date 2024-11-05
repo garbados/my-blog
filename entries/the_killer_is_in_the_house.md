@@ -2,7 +2,7 @@ title: The Killer is in the House
 description: He has nowhere to run.
 tags:
 - redacted
-created_at: 2024-11-06T00:00:00.000Z
+created_at: 2024-11-05T00:00:00.000Z
 
 # The Killer is in the House
 
