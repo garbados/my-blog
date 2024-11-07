@@ -25,12 +25,14 @@ In this essay I will demonstrate some basic usage of PouchDB, and then discuss a
 PouchDB is a JavaScript library that you can install using [npm](https://www.npmjs.com/):
 
 ```bash
+
 $ npm i -S pouchdb
 ```
 
 Once installed, you can `require()` PouchDB in your project:
 
 ```javascript
+
 const PouchDB = require('pouchdb')
 const db = new PouchDB('test')
 db.post({ hello: 'world' }).then((result) => {
@@ -53,6 +55,7 @@ If you run this code in a server environment, PouchDB will create a folder calle
 I like to use the environment variable `COUCH_URL` to store the URL of my CouchDB installation, so that I can use it to optionally hook my PouchDB instance up to it or to create a local database instead if `COUCH_URL` is not set:
 
 ```javascript
+
 const COUCH_URL = process.env.COUCH_URL
 const DB_NAME = 'test'
 const DB_PATH = COUCH_URL
@@ -66,6 +69,7 @@ This is useful when you already have a database in CouchDB with lots of data, an
 Now let's consider an example application: a multi-user blog where documents in the database represent each user's individual posts. Let's see these documents using the [.allDocs()](https://pouchdb.com/api.html#batch_fetch) method:
 
 ```javascript
+
 db.allDocs({ include_docs: true, limit: 1 })
   .then((result) => {
     console.log(result)
@@ -92,6 +96,7 @@ db.allDocs({ include_docs: true, limit: 1 })
 The `.allDocs()` method sorts documents by their `_id` field, meaning that if you carefully construct an `_id` you can make this index instantly useful. In the above example, the document's `_id` field is namespaced to the document's type, its associated user, its creation date, as well as a random suffix to distinguish posts submitted simultaneously. Here is the code that I used to construct this dummy data:
 
 ```javascript
+
 // construct users
 const users = []
 for (let i = 0; i < 10; i++) {
@@ -129,6 +134,7 @@ db.bulkDocs([...users, ...docs])
 Because of how these IDs are constructed, you can use the `startkey` and `endkey` options to retrieve specific subsets of your data, such as all documents of a specific type, or all entries chronologically:
 
 ```javascript
+
 // get all users
 db.allDocs({
   startkey: 'user',
@@ -143,6 +149,7 @@ db.allDocs({
 Because PouchDB sorts IDs lexicographically, we can use high-value unicode characters to define specific key ranges to return. I use the character `\ufff0` because it is the highest valid unicode character. Here we use it to return all entries by a specific user:
 
 ```javascript
+
 db.allDocs({
   startkey: 'entry:garbados',
   endkey: 'entry:garbados:\ufff0',
@@ -157,6 +164,7 @@ db.allDocs({
 Because the part of an entry's ID that follows the username is its creation date, the results from above are automatically sorted chronologically. By default, results are sorted in ascending order, but you can use the `descending` option to reverse this behavior:
 
 ```javascript
+
 db.allDocs({
   startkey: 'entry:garbados',
   endkey: 'entry:garbados:\ufff0',
@@ -178,6 +186,7 @@ PouchDB mirrors the query semantics of CouchDB, and so exposes a map/reduce inde
 Views are a part of [design documents](https://docs.couchdb.org/en/stable/ddocs/views/intro.html), which PouchDB and CouchDB use to define indexes. Here is an example design document for our blog application:
 
 ```javascript
+
 db.put({
   _id: '_design/queries',
   views: {
@@ -203,6 +212,7 @@ db.put({
 Once the design document is in the database, we can use that `entriesByDate` view to query entries by when they were posted:
 
 ```javascript
+
 // get all posts by year-month
 db.query('queries/entriesByDate', {
   group: true,
@@ -218,6 +228,7 @@ Because the view specifies a 'reduce' step, PouchDB will group results based on 
 We can also skip the reduce step to retrieve entries from a specific date range:
 
 ```javascript
+
 // get all posts from March 11 2021
 db.query('queries/entriesByDate', {
   reduce: false,
@@ -237,6 +248,7 @@ The alternative to JavaScript views is called Mango, and it does not allow you t
 To use Mango with PouchDB, you will need the [pouchdb-find](https://github.com/pouchdb/pouchdb/tree/master/packages/node_modules/pouchdb-find) plugin. Then you can attach it to PouchDB like this:
 
 ```javascript
+
 const PouchDB = require('pouchdb')
 PouchDB.plugin(require('pouchdb-find'))
 ```
@@ -246,6 +258,7 @@ Now you can use the `.createIndex()` method to create Mango indices, and `.find(
 You can apply Mango selectors both at indexing time and query time. Applying a selector at indexing time allows you to use complex operators like `$regex` efficiently, because they are calculated before query time. For example, consider an index that maintains a list of all entries that contain the consecutive characters "abc". Here is how to write that index:
 
 ```javascript
+
 db.createIndex({
   index: {
     partial_filter_selector: {
@@ -262,6 +275,7 @@ db.createIndex({
 This creates a design document called `_design/mango` with a view called `abc`. We can invoke this index like this:
 
 ```javascript
+
 db.find({
   selector: { user_id: 'garbados' },
   use_index: ['_design/mango', 'abc']
@@ -286,6 +300,7 @@ db.find({
 Mango queries by default return whole documents, as though you were using `include_docs: true`. You can constrain the fields that the query returns using the `fields` option:
 
 ```javascript
+
 db.find({
   selector: { user_id: 'garbados' },
   fields: ['_id', 'user_id', 'created_at']
@@ -316,6 +331,7 @@ A plugin I include in almost all my projects applies the `forcePut` method, whic
 Here is the plugin:
 
 ```javascript
+
 PouchDB.plugin({
   forcePut: async function (doc) {
     try {
@@ -345,6 +361,7 @@ PouchDB.plugin({
 Now you can use the `.forcePut()` method on PouchDB instances:
 
 ```javascript
+
 const DDOC = {
   _id: '_design/queries',
   views: { ... }
@@ -357,6 +374,7 @@ This is useful during database setup, so that you can ensure all your design doc
 Another plugin I commonly use adds the `.forceRemove` method, which deletes a document without requiring anything more than its ID:
 
 ```javascript
+
 PouchDB.plugin({
   forceRemove: async function (docOrDocId, ...opts) {
     // .remove() supports accepting a doc or doc ID, so this does too
@@ -382,6 +400,7 @@ PouchDB.plugin({
 The real power of plugins lies in being able to compose different features together, giving your database superpowers independent of the underlying storage mechanism. For example, consider this snippet that applies a series of plugins:
 
 ```javascript
+
 const PouchDB = require('pouchdb')
 PouchDB.plugin(require('comdb'))
 PouchDB.plugin(require('pouchdb-adapter-memory'))
@@ -392,6 +411,7 @@ PouchDB.plugin(require('pouchdb-quick-search'))
 These plugins add a variety of new abilities to your PouchDB instance, including the `.createIndex()` and `.find()` methods, but also wraps existing methods like `.bulkDocs()` to provide transparent document encryption. In particular, let's talk about what `pouchdb-quick-search` makes possible. It allows you to make queries looking for specific tokens in a field, such as words in entry contents. For example, the Mango view from above can be made more flexible and efficient using `.search()`:
 
 ```javascript
+
 db.search({
   query: 'abc',
   fields: ['content'],
@@ -407,6 +427,7 @@ This returns all documents that contain the token 'abc', matching 'abc def' but 
 Unfortunately, plugins like `pouchdb-quick-search` do not function with some adapters, namely CouchDB. The CouchDB adapter can only utilize features that CouchDB already supports, while this plugin uses a search engine that CouchDB does not. As a result, to use this plugin while working with a CouchDB database, you must replicate data from CouchDB to the local database, like this:
 
 ```javascript
+
 const db = new PouchDB('test')
 const remote = new PouchDB(`${COUCH_URL}/test`)
 // begin replication, and then continue replicating
@@ -433,6 +454,7 @@ Promise.resolve().then(async () => {
 [ComDB](https://github.com/garbados/comdb), another one of the plugins included above, overrides document updates and replication to encrypt documents. Let's see how that works:
 
 ```javascript
+
 const PASSWORD = 'goodpassword'
 const db = new PouchDB('test')
 const db2 = new PouchDB('test-2')
@@ -460,6 +482,7 @@ Now that we have all these pieces in play, let me illustrate for you a usage sce
 and back out to user devices, but only users that have a document's associated decryption key can read it. A clever server would enforce document permissions itself; we'll talk about how to do that later. First, how do you do E2E encryption with ComDB? With [pouchdb-adapter-memory](https://www.npmjs.com/package/pouchdb-adapter-memory), which can make a PouchDB instance store its documents in memory rather than on disk:
 
 ```javascript
+
 const REMOTE_URL = `${process.env.COUCH_URL}/test-remote-encrypted`
 // setup db: in-memory unencrypted, encrypted on disk
 const db = new PouchDB('test-unencrypted', { adapter: 'memory' })
@@ -486,6 +509,7 @@ We'll continue to develop Chitter as this guide progresses. For now it's suffici
 Plugins modify PouchDB itself, causing their changes to affect all instances of PouchDB. In application development, your context of your data will shape the access patterns that you use and develop. Deciding how to organize these access patterns can have a huge impact on maintenance effort and onboarding time. I strongly recommend organizing access methods for your data around a subclass of PouchDB, and for different contexts, using multiple subclasses. Let's see this in the context of Chitter, which adds methods for working with different document types:
 
 ```javascript
+
 class ChitterDB extends PouchDB {
   // override fetch to add authentication headers when the user is set
   static fetch (url, opts) {
@@ -701,6 +725,7 @@ class ChitterDB extends PouchDB {
 In the above example, we extend PouchDB with methods like `.addStatus()` that are specific to the semantics of our application. By doing this, we can rely on existing methods like `.get()` and `.remove()`, while providing more tightly scoped methods that account for the usage context, such as `.getConfig()`, `.listFollowing()`, and `.followUser()`. Let's see what it's like to work with a status in this architecture:
 
 ```javascript
+
 const chitter = new ChitterDB('test')
 chitter.addStatus('hello world').then(async ({ id }) => {
   // grab the ID from the underlying call to `.put()` and use `.get()` to retrieve the doc.
@@ -722,6 +747,7 @@ We can use PouchDB methods alongside our custom methods, to facilitate semantics
 If you need a second database, for example if you wanted to keep config settings and statuses in separate databases, you can create another subclass to encompass that additional scope:
 
 ```javascript
+
 class ChitterConfig extends PouchDB {
   // set specific config values, like user UI preferences
   async setConfig (key, value) {
@@ -738,6 +764,7 @@ class ChitterConfig extends PouchDB {
 By scoping methods in this way, it becomes easy to add new scopes without creating a monolithic interface. Furthermore, by maintaining multiple databases you can set different replication settings for them. For example, say you wanted to replicate statuses but not config values:
 
 ```javascript
+
 // local config: application settings, security keys
 // not for replicating
 const config = new ChitterConfig('config')
@@ -771,6 +798,7 @@ To continue with Chitter as an example, let's look at the various types a social
 As an example of using this architecture, let's aggregate a status with multiple edits as well as associated media files:
 
 ```javascript
+
 class ChitterStatuses extends PouchDB {
   // setup indices. run at startup
   async setup () {
