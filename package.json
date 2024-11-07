@@ -5,7 +5,7 @@
   "version": "1.0.0-beta",
   "private": true,
   "scripts": {
-    "start": "npm run build && serve public",
+    "start": "run-p build serve",
     "test": "npm run build && npm audit",
     "prebuild": "mkdir -p static fonts",
     "build": "run-p build:*",
@@ -16,7 +16,9 @@
     "build:images": "cp src/img/* public/img/",
     "new-entry": "./bin.js new-entry",
     "clean": "rm entries/*.md *.html; npm run build",
-    "watch": "watch 'npm run build' src entries"
+    "watch": "watch 'npm run build' src entries",
+    "serve": "serve public",
+    "dev": "run-p watch serve"
   },
   "keywords": [
     "blog"

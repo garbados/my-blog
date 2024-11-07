@@ -4,7 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>{{config.title}}</title>
+  <title>{{#if entry}}{{entry.title}}{{else}}{{config.title}}{{/if}}</title>
+  <meta name="description" content="{{#if entry}}{{entry.description}}{{else}}{{config.description}}{{/if}}">
 
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/default.min.css">
