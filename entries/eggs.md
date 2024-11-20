@@ -23,8 +23,8 @@ I wouldn't have called DHS.
 Now I walk on by
 An empty driveway, an empty house.
 
-My sister-in-law has an auto-immune disorder,
-and COVID nearly killed her, a few times over.
+My sister-in-law has an auto-immune disorder.
+COVID nearly killed her, a few times over.
 She asks me to wear a mask inside.
 Maybe if the eggs had been cheaper,
 I wouldn't have coughed on her.
