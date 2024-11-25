@@ -68,7 +68,7 @@ Can you think of any ways that sidestepping capitalist and colonialist framings 
 
 ...
 
-I hope that this essay, and my writing in general, helps to illuminate a militant spirit, to kindle it as it already lived in them. I am not some mastermind; mine is merely a synthesis, and you'd best check my sources to get the whole context. I just need you to understand what crazy things are possible in crazy times. I want you to hold that dim fire of unbreakable dignity and breathe new life into it. I want the struggle for compassion to power you up.
+I hope that this essay, and my writing in general, helps to illuminate a militant spirit, to kindle it as it already lives in you. I am not some mastermind; mine is merely a synthesis, and you'd best check my sources to get the whole context. I just need you to understand what crazy things are possible in crazy times. I want you to hold that dim fire of unbreakable dignity and breathe new life into it. I want the struggle for compassion to power you up.
 
 I want to bury capital and colony and live for the world that rises from their grave.
 
