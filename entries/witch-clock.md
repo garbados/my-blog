@@ -14,6 +14,8 @@ I had celebrated the Winter Solstice about a week before, and in my heart, that 
 
 Back in 2016 or so, this interest in daylight motivated me to make `witch-clock`, a rudimentary tool for estimating solar and lunar events, like sunrises, solstices, and lunar phases. I used it to build an [i3](https://i3wm.org/) desktop widget that replaced my Gregorian taskbar clock with a clock that expressed dates relative to recent and upcoming events. "Six days til the vernal equinox," "Five days since the New Moon." The project fell off after I stopped using i3, and then life happened for a while. After this years' NYE party, I felt motivated to revisit it.
 
+The result? [The Calendar of the Witchmothers](https://clock.bovid.space).
+
 ## What is a clock
 
 To me, there are two major types of clocks: stopwatches, and calendars. (Honorable mention: logical clocks. Not relevant.)
