@@ -77,6 +77,7 @@ const elementHTML = alchemize(['h1', `React is ${2 + 'much'} bloat.`])
 To turn HTML strings into proper elements, we turn to WebComponents. I'll walk you through an example:
 
 ```js
+
 import { alchemize } from 'html-alchemist'
 
 // custom elements are just classes that extend basic elements
@@ -133,6 +134,7 @@ That's it! Those five methods are all you need to worry about, and practically s
 This JS is useless without some starting HTML. Here's all you need:
 
 ```html
+
 <html>
     <head>
         ...
@@ -151,6 +153,7 @@ Now, once the DOM has finished loading, your element will automatically connect.
 Now, how do we do interactivity? A button, for example? Let me show you:
 
 ```js
+
 class MyButton extends HTMLElement {
   async connectedCallback () {
     // in this example, i keep element state inside `connectedCallback`
@@ -182,6 +185,7 @@ class MyButton extends HTMLElement {
 How about a login element?
 
 ```js
+
 // parameterize alchemy expressions to use as templates!
 function renderMyLogin (error) {
   return alchemize([
@@ -224,6 +228,7 @@ I'm sure that if you know anything about the shadow DOM, unlike me, this approac
 Note that `.innerHTML` will build a node from whatever you give it, which means it's a vector for [code injection](https://en.wikipedia.org/wiki/Code_injection) if you alchemize user input. Alchemist supplies a convenience function to escape HTML called `sanctify`, which uses the browser's own text-parsing to escapes anything that looks like HTML. For more complex sanitization cases, such as allowing limited HTML markup, check out [@jitbit/htmlsanitizer](https://github.com/jitbit/HtmlSanitizer).
 
 ```js
+
 import { alchemize, sanctify, listento, snag } from 'html-alchemist'
 
 // `listento` and `snag` are convenience methods
@@ -280,6 +285,7 @@ was using a `uuid()` function instead of typing out IDs, expecting them to be un
 Here is one way to manage elements with unique IDs:
 
 ```js
+
 const uniqueID = uuid()
 this.innerHTML = alchemize([
   [`input#${uniqueID}`, { type: 'text' }]
