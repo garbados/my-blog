@@ -247,8 +247,7 @@ class CustomPost extends HTMLElement {
           ['input#post-save', { type: 'button', value: 'Save' }]
         ])
         listento('post-save', 'click', () => {
-          const { value: post } = snag('post-input')
-          text = post
+          text = snag('post-input').value
           editing = false
           refresh()
         })
