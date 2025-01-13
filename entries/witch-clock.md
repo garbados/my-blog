@@ -281,9 +281,7 @@ With these recipes in hand, I made the interface for the Witch Clock in about 30
 
 I had a lot of fun making the Witch Clock. I plan to celebrate each of its holidays this year, just for fun. I'm very happy with the tools and patterns that spun out of its development. Expect these to show up in future projects! I am very happy to have finally rid my stack of React.
 
-A pattern that's important to using Alchemist, but which didn't come up while making Witch Clock,
-was using a `uuid()` function instead of typing out IDs, expecting them to be unique.
-Here is one way to manage elements with unique IDs:
+A pattern that's important to using Alchemist, but which didn't come up while making Witch Clock, was using a `uuid()` function instead of typing out IDs, expecting them to be unique. Here is one way to manage elements with unique IDs:
 
 ```js
 
