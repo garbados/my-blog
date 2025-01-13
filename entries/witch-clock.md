@@ -1,4 +1,4 @@
-title: Making a Calendar: Witch Clock
+title: "Making a Calendar: Witch Clock"
 description: An adventure in timekeeping and JavaScript.
 tags:
 - time
