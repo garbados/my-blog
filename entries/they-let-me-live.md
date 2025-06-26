@@ -46,7 +46,7 @@ I sip my chaga while I survey the town. The Willamette gleams under the vivid su
 
 "Dude, is that chaga?" Elon rankles. "It smells like the fucking woods."
 
-"Yep. Sysiphean sissifying mushroom poison," I tease. "If I keep drinking it, I'll turn trans and autistic. That's how they get you. First you topple your own basis of colonial power, and then the queermos roll in with their awful health drinks and abolitionism. Or, they roll into Idaho on tacticals to bust your fanbase convention. How dare they think of holding a genius for ransom\! What a travesty." I take a loud sip. I don’t have the heart to bring up how nobody came to pay his ransom, never in anything that mattered.
+"Yep. Sysiphean sissifying mushroom poison," I tease. "If I keep drinking it, I'll turn trans and autistic. That's how they get you. First you topple your own basis of colonial power, and then the queermos roll in with their awful health drinks and abolitionism. Or, they roll into Idaho on tacticals to bust your fanbase convention. How dare they think of holding a genius for ransom! What a travesty." I take a loud sip. I don’t have the heart to bring up how nobody came to pay his ransom, never in anything that mattered.
 
 "Whatever," he replies, shrunken. He takes another hit and looks at the floor.
 
@@ -54,7 +54,7 @@ By the time I step out of the shower and stand dressed in slacks and a flax shir
 
 "Mr. Musk, come on. You haven't been to counseling in three years. You haven't seen a designated friend since last winter. You–"
 
-"You're all the real Nazis...\!" he says, as if he means to shout it, but the well-worn words only slip from his tired mouth. "I can't leave freely, I can't see my kids, and you try to feed me poison."
+"You're all the real Nazis...!" he says, as if he means to shout it, but the well-worn words only slip from his tired mouth. "I can't leave freely, I can't see my kids, and you try to feed me poison."
 
 "Mr. Musk, that's not–" one starts, but the other has a different approach to politeness. He puts a hand on his comrade's shoulder, and with a wordless glance they concur.
 
@@ -89,11 +89,11 @@ I meet my designated friend Carol in the lobby before ten. She's curled in a lou
 
 "What are you drawing?" I ask.
 
-"Oh, Jackie, jeez. Hey\! Happy birthday\!" She sets the sketchpad aside and leaps to her feet, giving me a warm hug. I give her a simple pat on the back.
+"Oh, Jackie, jeez. Hey! Happy birthday!" She sets the sketchpad aside and leaps to her feet, giving me a warm hug. I give her a simple pat on the back.
 
 "Thanks, Carol. It's always an adventure, getting older."
 
-"That's what I tell my niblings\!"
+"That's what I tell my niblings!"
 
 "Heh, I'll bet I heard it from you."
 
@@ -103,7 +103,7 @@ Carol is one of my regulars, or, a designated friend that I have listed as *pref
 
 As we step out of the hotel onto the street, I ask, "Have you ever seen this movie?"
 
-"Which one? It's a festival, bud\! *The Bat And The Man, June Cinathon\!*"
+"Which one? It's a festival, bud! *The Bat And The Man, June Cinathon!*"
 
 "Oh, right. Well, which one are we seeing first?"
 
@@ -143,7 +143,7 @@ She searches my face, and then looks down at her hands. I leave her to her thoug
 
 Now it's my turn to look at my hands.
 
-"Sorry to bring it down, buddy," she says. "He's just... so weird\!"
+"Sorry to bring it down, buddy," she says. "He's just... so weird!"
 
 I glance at her and offer a weak smile before returning my eyes to the window. "It was pretty weird, all around."
 
@@ -181,7 +181,7 @@ Ledger joins their guffaws with his simple, "Ha. Ha. Ha."
 
 I don't really understand their humor. It's something between a revenge fantasy and the kind of jokes invented by people who have only seen the word 'rent' in history books. They understand the movie as the propaganda of clowns. I'm glad they're having fun.
 
-*LOOK OUT\! THAT'S A BAZOOKA\! "Is that a bazooka?" TOO LATE. **BOOM!***
+*LOOK OUT! THAT'S A BAZOOKA! "Is that a bazooka?" TOO LATE. **BOOM!***
 
 The other movies are presented less sensationally. *The People's Joker*, some kind of surrealist trans coming-of-age story, seems more quaint and dated by comparison. The idea of transness has melted into a broader social dialogue about willful manifestation and identity, and typical sex ed modules contain a section about hormone replacement therapy. The protagonist's experiences – of repression, obstruction, hiding and fighting – don't translate for someone like Carol, who steps out of the theater with a neutral, "Huh. Was that what it was like?"
 
@@ -207,11 +207,11 @@ The last two are avant-garde Revolutionary art, one being a retelling of *The Ki
 
 As she disappears to the restroom, I think about how people change.
 
-"...I used to hate *The Dark Knight*\!" I hear across the atrium. I look over and see another salt-haired senior, with colorful suspenders and a glitzy cane. "I was starting in film school when it came out, and every damn day I was forced to acknowledge its competence. I was so sick of it\! But these kids and their shenanigans? Reminds me of Rocky Horror."
+"...I used to hate *The Dark Knight*!" I hear across the atrium. I look over and see another salt-haired senior, with colorful suspenders and a glitzy cane. "I was starting in film school when it came out, and every damn day I was forced to acknowledge its competence. I was so sick of it! But these kids and their shenanigans? Reminds me of Rocky Horror."
 
 "Sorry to intrude," I step over, bowing modestly, "I heard you talking about Rocky Horror. Did you used to go to the Clinton Street showings?"
 
-"Oh shit, a P-towner\!" they clasp my hand, "Rubella, good to meet you. Rose Guard, twenty three years."
+"Oh shit, a P-towner!" they clasp my hand, "Rubella, good to meet you. Rose Guard, twenty three years."
 
 "Isn't that a rash?"
 
@@ -219,7 +219,7 @@ As she disappears to the restroom, I think about how people change.
 
 "Call me Jackie, like Robinson."
 
-"Jackie-like-Robinson, riddlin' me about the Clinton Street what pigs burned down. Glad the kids rebuilt it, the dead'd be unhappy otherwise. Yeah I used to go. I musta been... fifteen, when I first went. And it still took me a decade to start on T\! What, did you have a *formative experience* there?"
+"Jackie-like-Robinson, riddlin' me about the Clinton Street what pigs burned down. Glad the kids rebuilt it, the dead'd be unhappy otherwise. Yeah I used to go. I musta been... fifteen, when I first went. And it still took me a decade to start on T! What, did you have a *formative experience* there?"
 
 "Oh, haha, no, well, no. I just had a good time with some friends."
 
@@ -259,7 +259,7 @@ She's stern and controlled when she replies, "I know you were an officer of the 
 
 Carol is sitting upright as I speak, projecting her gaze over downtown's few remaining, still glittering high-rises, miles away from us. I think she's listening. I don't know if that matters to me.
 
-"When food got scarce, the protests got bad, then the reprisals happened, then the protests got worse, and then the reprisals got worse, and... there were people I could hand you to, and you would never see daylight again even if you didn't die for decades. We told ourselves stupid stories about criminals and order and protecting the peace but it was just... it was just horseshit\! We were the fist of evil itself. So I... so I bailed. I stopped coming to work. I disconnected the phone. Nobody lived in my mcmansionville anyway; anybody with money had emigrated or bunkered ages ago. I tended my garden and I made good of what I'd stockpiled. My plastic house was never a strategically significant location, so the Rose Guard never came near me, until I... until I drove into town, seven years out, a year after the quake shattered my house's foundation. I gave my ID at a checkpoint like a fucking idiot, and they wrestled me to the ground. I didn't... I didn't leave the city for another five years, until I got clearance for a designated friend to escort me to the coast for a weekend."
+"When food got scarce, the protests got bad, then the reprisals happened, then the protests got worse, and then the reprisals got worse, and... there were people I could hand you to, and you would never see daylight again even if you didn't die for decades. We told ourselves stupid stories about criminals and order and protecting the peace but it was just... it was just horseshit! We were the fist of evil itself. So I... so I bailed. I stopped coming to work. I disconnected the phone. Nobody lived in my mcmansionville anyway; anybody with money had emigrated or bunkered ages ago. I tended my garden and I made good of what I'd stockpiled. My plastic house was never a strategically significant location, so the Rose Guard never came near me, until I... until I drove into town, seven years out, a year after the quake shattered my house's foundation. I gave my ID at a checkpoint like a fucking idiot, and they wrestled me to the ground. I didn't... I didn't leave the city for another five years, until I got clearance for a designated friend to escort me to the coast for a weekend."
 
 Carol turns to me and says without emotion, "Do you feel guilty?"
 
@@ -337,7 +337,7 @@ Unfortunately, it's closed. Thirty minutes, twice a day, they shutter the place 
 
 "Howdy, Jackie," he grunts in stride.
 
-The automat is a dense see-through contraption the size of a vending machine, fitted with an array of labelled steel buttons. It can fix a decent corndog, when I consider something savory, but it's the oat-custard cup I'm really after. I press mechanical buttons to configure my choice, and a pageantry of servos and nozzles prepares my dessert. A special shaker distributes sprinkles before a rudimentary chime sings, "I'm done. Please enjoy\!"
+The automat is a dense see-through contraption the size of a vending machine, fitted with an array of labelled steel buttons. It can fix a decent corndog, when I consider something savory, but it's the oat-custard cup I'm really after. I press mechanical buttons to configure my choice, and a pageantry of servos and nozzles prepares my dessert. A special shaker distributes sprinkles before a rudimentary chime sings, "I'm done. Please enjoy!"
 
 Returning to the apartment, I notice Elon has disappeared from the couch and into his room. The TV is still going, so I decide to sit in front of it myself while I eat. But, listening to David Attenborough bemoan the ongoing Sixth Extinction stifles my interest. I turn off the TV and move to the dining table by the window, taking in instead the little-interrupted quiet of New Rose City's nightlife.
 
