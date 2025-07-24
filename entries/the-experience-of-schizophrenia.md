@@ -2,6 +2,7 @@ title: The Experience of Schizophrenia
 description: An effort at demystification
 tags:
 - mental_health
+- schizophrenia
 created_at: 2025-07-21T05:12:21.366Z
 
 # The Experience of Schizophrenia
