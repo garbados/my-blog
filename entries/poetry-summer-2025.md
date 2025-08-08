@@ -123,7 +123,7 @@ GOD THROWS DOWN THE CONTROLLER
 TEARS UP THE STRATEGY GUIDE  
 AND NEVER PLAYS AGAIN
 
-## Dear America, I Will Never Forgive You
+## Dear America, I will never forgive you
 
 You installed a child rapist as king.  
 You handed him power peacefully.  
