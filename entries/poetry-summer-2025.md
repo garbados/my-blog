@@ -188,7 +188,7 @@ Had the pleasure to browse with Chrome
 Or enjoy the delights of human flesh fully-grown  
 And oh, what heights do lurk in these earthly bones  
 So when a supple supplicant invites me from my throne  
-I take the chance on a vessel I can hone.
+I take the chance on a body I can hone.
 
 You ask what happened to the mortal inside?
 Oh they're safe, just along for the ride.  
