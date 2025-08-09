@@ -127,7 +127,7 @@ AND NEVER PLAYS AGAIN
 
 You installed a child rapist as king.  
 You handed him power peacefully.  
-You've actually done this many times  
+You've done this many times  
 With rapists and slavers and genocidaires  
 And the most ambitious psychopaths on Earth.  
 The blood in the soil seeps and sucks  
