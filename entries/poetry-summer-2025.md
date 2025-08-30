@@ -164,7 +164,7 @@ I will outlive you.
 ## Oh, to arrive!
 
 I just flew in from the end of time  
-And boy are my arms tired.  
+And golly are my arms tired.  
 Well, they're arms now  
 And that's fine.
 
