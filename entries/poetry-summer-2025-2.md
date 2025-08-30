@@ -167,7 +167,7 @@ It awoke and shivered,
 And the land shook with it.  
 Those plates had never made peace.  
 
-## Friendship is magic
+## Friendship is Magic
 
 Friendship is medicine  
 For a wound you don't feel  
@@ -178,7 +178,7 @@ But their absence keens.
 Even without names  
 The body knows togetherness.  
 
-## Seven thousand years
+## Seven Thousand Years
 
 My good friend Dumuzid  
 Opens the way to Uruk for me sometimes  
