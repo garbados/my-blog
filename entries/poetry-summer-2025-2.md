@@ -20,7 +20,7 @@ Than what he leaves,
 Then know this:  
 Kinder does not live in his death.  
 His body was never the lock.  
-Demons will outlive him.  
+Demons will outlive him  
 But in his final hours  
 You grin at the threshold:  
 We can outlive demons.  
