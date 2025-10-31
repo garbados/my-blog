@@ -16,7 +16,7 @@
     "build:images": "cp resources/img/* public/img/",
     "new-entry": "./bin.js new-entry",
     "clean": "rm entries/*.md *.html; npm run build",
-    "watch": "sane 'npm run build' --glob={resources,entries}/**/*",
+    "watch": "sane 'npm run build' --glob={resources,entries,lib}/**/*",
     "serve": "serve public",
     "dev": "run-p watch serve"
   },
