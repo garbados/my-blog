@@ -1,5 +1,5 @@
 title: Why do you not love each other?
-description: 
+description: Can you overcome the covenant of profit and privation?
 tags:
 - essay
 - philosophy
@@ -50,6 +50,6 @@ Zohran Mamdani will be the mayor of New York. He calls himself a democratic soci
 
 Will humans overcome cruelty's call of extinction? I don't know; it seems too big to wonder in a way that matters. But, will you and I find another way of life than capital and colony? I don't know, but, I know we want it, and I can see we'll even work toward it. The people of what we call China overcame a century of humiliation. Even if it takes a century, can we not overcome ours? I insist we can, and I am not alone.
 
-Elijah banished Baal with chemistry; what cleverness had he then that not one of us possesses now? None. When capital wails for its trade routes, and we feed one other another way, will you say we were given it by YHWH's favor? The heavens are not aligned to your perception: the possibility of the way is in us already. It is the possibility of love, and nothing can remove that from anyone.
+Elijah banished Baal with chemistry; what cleverness had he then that not one of us possesses now? None. When capital wails for its trade routes, and we feed one other another way, will you say we were given it by a Creator's favor? The heavens are not aligned to your perception: the possibility of the way is in us already. It is the possibility of love, and nothing can remove that from anyone.
 
 Do not allow fear to goad you into a life of regret. Do not permit greed to rob you of better things. Do not forget that we *can* love each other. The struggle to do so won't end in your lifetime but you can choose your part in its demise -- or ours.
