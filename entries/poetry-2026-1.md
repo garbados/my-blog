@@ -8,7 +8,7 @@ created_at: 2026-01-06T03:04:10.252Z
 
 To date, you lot have failed to prevent this. Nobody has been able to stop me from adding linebreaks to prose that only rhymes when I want you to hate it.
 
-In December, I presented [TEETH](./teeth.md) to a roomful of mostly-strangers alongside three [extremely](https://www.instagram.com/gwenisrad/) [talented](https://www.instagram.com/duquese100new/) [poets](https://www.instagram.com/rj_equality/) to whom you should absolutely send money. People chanted the name of a karmic supervillain and when I watched the footage I asked, "Am I really that curvy?"
+In December, I presented [TEETH](./teeth) to a roomful of mostly-strangers alongside three [extremely](https://www.instagram.com/gwenisrad/) [talented](https://www.instagram.com/duquese100new/) [poets](https://www.instagram.com/rj_equality/) to whom you should absolutely send money. People chanted the name of a karmic supervillain and when I watched the footage I asked, "Am I really that curvy?"
 
 Over everybody else's holidays, I wrote more. As seven is a fun number, please enjoy that many poems.
 
@@ -368,7 +368,7 @@ I couldn't stop her from getting old among family
 Perishing surrounded by progeny
 Who still say her name fondly.
 I told myself I couldn't decide whether it would be crueler
-To let her die doubting how she cherishe others
+To let her die doubting how she cherishes others
 And how they truly, truly cherish her
 Or to render in isolation the illusion of certainty
 That no one ever would.
