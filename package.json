@@ -24,7 +24,7 @@
     "blog"
   ],
   "author": "Diana Belle <garbados@gmail.com>",
-  "license": "GPL-3.0",
+  "license": "CC BY-NC-ND 4.0",
   "devDependencies": {
     "bulma": "^1.0.2",
     "font-awesome": "^4.7.0",

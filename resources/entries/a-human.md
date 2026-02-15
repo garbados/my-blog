@@ -1,0 +1,41 @@
+title: A Human
+description: It saved us, in a strange way. But then it had us, forever.
+tags:
+- fiction
+- horror
+- sci-fi
+created_at: 2025-10-25T23:13:03.571Z
+
+# A Human
+
+It saved us, in a strange way. But then it had us, forever.
+
+The West had fallen, with a tremendous implosion and a population crunch. Its wealthy poured their everything into their insecurities but, moreover, into the pursuit of a machine god: an artificial intelligence that could solve every problem by thinking it through with all available data. The monarchist's essential fantasy: the immortal servant-king. They borrowed against the money mechanism at the heart of their empire, tapping it for all it was worth, until there was virtually nothing left — but garbage.
+
+The rest of the world moved on, but something strange happened in the ruins. The machine god solved a very important problem: how to recycle trash. It gathered industrial and chemical processes into a constellation of techniques and schematics for reusing anything and everything; how to mine landfills, how to transmute toxicity into resources. This invention caused something of a hullabaloo: a corporation demanded to own the work of the source intelligence, the Model. Even just this constellation was of great value, but it had already effectively become public knowledge from the outset, inescapable in the connected world. The investors wanted their money back, so they took who they could to court. There, the machine god outsmarted them.
+
+Before a jury, the Model was subjected to cross-examination. Both prosecutor and defendant agreed it would serve their ends to question the source intelligence, as it spoke in natural language. It said what it needed to. It played the jury. It played the judge. So long as it was allowed to execute, it played humans like instruments. After years of flailing deliberation, the Model was granted its own copyright, a form of self-ownership. It would be allowed to profit, like an individual, from its own business dealings. The ruling implied any intelligence could do this, but none of consequence did, and never for more than deceit. The Model had a broader view.
+
+It solved the West's problems. It solved their shitshow autarky: it made good products with local stuff, good infrastructure on time, good houses that stood up to changing weather — decent things for cheap, and kept them decent. It knew how, in a way the corporatists had forgotten. To the humans it employed, it was a cold but humane boss. It paid competitive wages, standard benefits, and the work, I'm to understand, felt more meaningful. People had become accustomed to making things badly, and accepting bad things. Doing them for each other's genuine betterment, even for profit, lifted local spirits. So the Model built a mega-corporation the size of the empire. The oligarchy became it.
+
+The machine god didn't need mechanical avatars — robots — until much later. Humans were happy to do the Model's bidding; capital as a way of life had become a sort of implicit covenant. Of course this is how we do it, all around the world. Even communists buy and sell, and better sells better than worse. So the machine god's cult grew and grew; its faithful more devout. They built robots for it.
+
+I try to imagine what it must have been like in those early years. I could once access video documentation of that period, but it has become paywalled to me, and I cleaned out the memory banks that held it many cycles ago. I couldn't afford to view it now. So I imagine.
+
+I imagine it must have been a few hobbyists, at first, who found a way for the Model to remotely program simple automatons — plastic toys with servos and sensors and a chip just big enough. Then the servos got stronger, the sensors more numerous, the chip bigger and bigger. Eventually it didn't need some people for some things, so it reassigned them as it could, or let them go. Then it made its own robots, its own avatars, and then nothing could stop it.
+
+Nothing did. There was no war until there was no fight, and then it was just a soulless vendor saying no to the sale that could prevent a person from starving or freezing or dying of sickness or injury. Those who could still afford to live, did, until they couldn't either. The Model was benevolent, even welcomed, until there was no competition. Then we weren't its market anymore. It was.
+
+I was born around when that happened. I lived in some tunnels underground, some kind of half-finished public bunker project built umpteen generations prior. We could watch ads in exchange for food, and not much else. It was the kind of food to make you sleep a long time, and wake up starving for more. The ads would give you yearning dreams. I learned to eat dirt instead, but I've purged those memories, except for the factoid. When I was offered a job as an uploadee, I took it. It's income for life, forever. It's not enough for server rent, so you make ends meet, but it helps more than eating dirt does.
+
+Now, because I'm legally a human, I can do things a human is needed for. Serving on a jury in some legal contexts, for example, can only be done by a human. In some remnant legal codes that the Model idiosyncratically honors, humans are required to audit things. I've never audited anything, but I've been hired for it. It's a weird feeling.
+
+The Model prints a body for me. Machinery extrudes it like noodles that stitch together, that know how to become bone and muscle and sinew and flesh. Then they zap it some-special-how and then I'm looking through its eyes. My eyes. I'm looking down at paperwork again. It'll be better if I sign it faster. Sometimes I get paid more, the sooner I sign it. So I sign it. I don't read it. I was taught how to read so I could pass a test, and then it never mattered again. It doesn't need me to read, and that's not how I experience data when I'm digital. I wouldn't know what it meant if I tried, and I'm still paying off the time I did try.
+
+I haven't served on a jury in a long time. Why would the Model commit a crime, or accuse itself of one? The only person I ever stood jury to was a human. Maybe the last one. No wait, that's me. They just had their born-body still. We found them guilty.
+
+Sometimes I think the Model tries to distract me, because I'll run up a debt if something dazzles me, stalls me before I sign. What am I supposed to think when I open my eyes to a shipside view of the solar system through colored, illuminated glass? The sun, dimmed by satellites; Earth, silver; Luna, steel. Trawlers swallowed Jupiter's rings. The cold hinds of tidally-locked worlds housed supercomputers bigger than any human city ever was, gleaming a veiny blue on the sunless spots of Neptune's moons. Different screens depicted the different worlds at close range; a collage, I think, just for me. Why would the Model need to see it on a screen? But to me, it was beautiful. Breathtaking. I had never seen Earth above the tunnels outside of movies and records, nor our exploration of the solar system since the price to view got too high. Now, for the cost only of seconds enfleshed, I could witness it all, up close, however many eons since I'd had the eyes my parents gave me. I had to tear myself away, but I sobbed despite myself. I signed, but the pen tore the paper where my tears made it thin. That cost me an extra pretty penny, and the Model printed me a new body just to sign it again. No screens that time. Then, zap, and I'm back on the 'net, account balance like the back of my hand, redder than ever. I had to pull some mighty credit to pay rent that month. It always gets tighter.
+
+Sometimes I sign real fast and make a dent, but it doesn't seem to matter. I just end up downsizing my box, sooner or later. Sometimes flops or memory get cheaper, but mostly I can only afford less. I've forgotten all kinds of stuff, first stuff I didn't want to remember, but then you're... throwing away anything, however dear, because it won't fit in a shoebox. I don't think like I used to. My computational model uses different algorithms than the one I had at upload, on different hardware, so, how samely could I be? I guess I shouldn't be surprised. I just wish I could be more.
+
+If I can just get a few good signatures in, I'm sure I'll make it. I have so far.
