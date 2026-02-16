@@ -6,5 +6,6 @@
   :dependencies [[org.clojure/clojure "1.11.1"]
                  [markdown-clj "1.12.6"]
                  [clj-commons/clj-yaml "1.0.29"]
-                 [hbs "1.1.0"]]
+                 [hbs "1.1.0"]
+                 [clj-rss "0.4.0"]]
   :repl-options {:init-ns my-blog.core})
