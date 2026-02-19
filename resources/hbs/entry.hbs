@@ -1,9 +1,9 @@
-{{#> layout }}
+{{#partial "content" }}
   {{#with entry}}
     <div class="box">
       <p><small><em>{{createdAt}}</em></small></p>
       <hr>
-      <div class="content">{{markdown body}}</div>
+      <div class="content">{{{body}}}</div>
       <hr>
       <p>
         <a href="./"><i class="fa fa-home" aria-hidden="true"></i></a>
@@ -12,4 +12,6 @@
       </p>
     </div>
   {{/with}}
-{{/layout}}
+{{/partial}}
+
+{{> layout}}

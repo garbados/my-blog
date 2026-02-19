@@ -10,9 +10,11 @@
 (defn slurp-entry [filepath]
   (let [entry-name (second (re-matches #"^.+\/(.+)\..+$" filepath))
         s (clojure.core/slurp filepath)
-        [meta-yaml entry-md] (split-first #"\n\n" s)]
+        [meta-yaml entry-md] (split-first #"\n\n" s)
+        ]
     {:name entry-name
-     :meta (yaml/parse-string meta-yaml)
+     :meta (-> (yaml/parse-string meta-yaml)
+               (update :description markdown/md-to-html-string))
      :body (markdown/md-to-html-string entry-md)}))
 
 (defn -slurp-entries []

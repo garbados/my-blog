@@ -23,7 +23,7 @@
             <p class="title"><a href="./">{{config.title}}</a></p>
             <p class="subtitle">{{config.subtitle}}</p>
           </div>
-          {{> @partial-block }}
+          {{#block "content"}}{{/block}}
         </div>
         <div class="column is-one-fifth">
           <figure class="image" alt="A picture of me.">
