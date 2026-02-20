@@ -1,6 +1,6 @@
-(ns my-blog.core-test
+(ns my-blog.fs-test
   (:require [clojure.test :refer :all]
-            [my-blog.core :refer :all]))
+            [my-blog.fs :as fs]))
 
 (deftest a-test
   (testing "FIXME, I fail."

@@ -2,7 +2,7 @@
   (:require
    [clj-yaml.core :as yaml]
    [markdown.core :as markdown]
-   [my-blog.core :refer [filter-dir split-first]]))
+   [my-blog.fs :refer [filter-dir split-first]]))
 
 (def entries-dir "entries")
 (def min-tags-for-link 2)
@@ -10,12 +10,13 @@
 (defn slurp-entry [filepath]
   (let [entry-name (second (re-matches #"^.+\/(.+)\..+$" filepath))
         s (clojure.core/slurp filepath)
-        [meta-yaml entry-md] (split-first #"\n\n" s)
-        ]
-    {:name entry-name
-     :meta (-> (yaml/parse-string meta-yaml)
-               (update :description markdown/md-to-html-string))
-     :body (markdown/md-to-html-string entry-md)}))
+        [meta-yaml entry-md] (split-first #"\n\n" s)]
+    (-> (yaml/parse-string meta-yaml)
+        (update :description markdown/md-to-html-string)
+        (merge
+         {:name entry-name
+          :slug (str entry-name ".html")
+          :html (markdown/md-to-html-string entry-md)}))))
 
 (defn -slurp-entries []
   (->> (filter-dir entries-dir :re #"^.*?\.md$")
@@ -47,10 +48,4 @@
   (let [entries (slurp-entries)
         by-tags (group-by-tags entries)]
     {:entries entries
-     :by-tags by-tags
-     ;;  TODO pair link to hbs output
-     :links
-     (concat
-      (map :name entries)
-      (map (partial str "entries/") (map :name entries))
-      (map (partial str "tags/") (keys by-tags)))}))
+     :by-tags by-tags}))

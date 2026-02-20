@@ -1,9 +1,8 @@
-(ns my-blog.core 
+(ns my-blog.fs 
   (:require
    [clojure.java.io :as io]
    [clojure.string :as string]))
 
-(def resource-dir "resources")
 (def sep "/")
 
 (defn join [& args]
