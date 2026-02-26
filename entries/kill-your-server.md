@@ -3,6 +3,7 @@ description: Patterns for Serverless Applications
 tags:
 - pouchdb
 - software
+- code
 created_at: 2018-10-27T03:06:38.787Z
 
 # Kill Your Server And Get Back To Bed: Patterns for Serverless Applications

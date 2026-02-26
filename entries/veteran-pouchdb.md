@@ -3,6 +3,7 @@ description: An introduction to writing software with PouchDB.
 tags:
 - pouchdb
 - software
+- code
 created_at: 2021-03-14T20:51:06.023Z
 
 # A Veteran's Guide to PouchDB

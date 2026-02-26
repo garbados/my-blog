@@ -1,7 +1,8 @@
 {
   "name": "garbados-blog",
   "description": "Words as thought by meat.",
-  "homepage": "https://blog.bovid.space",
+  "homepage": "https://github.com/garbados/my-blog",
+  "repository": "github:garbados/garbados-blog",
   "version": "1.0.0-beta",
   "private": true,
   "scripts": {
@@ -14,9 +15,9 @@
     "build:images": "cp resources/img/* public/img/",
     "new-entry": "./bin.js new-entry",
     "clean": "rm entries/*.md *.html; npm run build",
-    "watch": "sane 'npm run build' --ignored={public,node_modules}/**/* --ignored=package-lock.json",
+    "watch": "sane 'npm run build' --glob={lib,resources,entries}/**/* --glob={package.json,config.json,bin.js}",
     "serve": "serve public",
-    "dev": "run-p watch serve"
+    "dev": "DEV=true run-p watch serve"
   },
   "keywords": [
     "blog"

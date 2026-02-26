@@ -8,7 +8,7 @@
   <meta name="description" content="{{#if entry}}{{entry.description}}{{else}}{{config.description}}{{/if}}">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/1.0.4/css/bulma.min.css" integrity="sha512-yh2RE0wZCVZeysGiqTwDTO/dKelCbS9bP2L94UvOFtl/FKXcNAje3Y2oBg/ZMZ3LS1sicYk4dYVGtDex75fvvA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  {{#if code}}
+  {{#if entry.code}}
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/themes/prism-tomorrow.min.css" integrity="sha512-kSwGoyIkfz4+hMo5jkJngSByil9jxJPKbweYec/UgS+S1EgE45qm4Gea7Ks2oxQ7qiYyyZRn66A9df2lMtjIsw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/normalize-whitespace/prism-normalize-whitespace.min.js"></script>
@@ -23,25 +23,36 @@
       <div class="columns">
         <div class="column is-four-fifths">
           <div class="block">
-            <p class="title"><a href="./">{{config.title}}</a></p>
+            <p class="title"><a href="{{config.url}}">{{config.title}}</a></p>
             <p class="subtitle">{{config.subtitle}}</p>
           </div>
           {{> @partial-block }}
         </div>
         <div class="column is-one-fifth">
           <figure class="image" alt="A picture of me.">
-            <img src="img/self_202x.jpeg">
+            <img src="{{config.url}}{{config.pfp}}">
           </figure>
           <p class="content">
             <p>{{config.description}}</p>
           </p>
           <hr>
           <aside class="menu">
+            <p class="menu-label">Tags</p>
+            <ul class="menu-list">
+              {{#each taglist}}
+              <li>
+                <a href="{{../config.url}}tag/{{tag}}">{{tag}} ({{n}})</a>
+              </li>
+              {{/each}}
+            </ul>
+          </aside>
+          <hr>
+          <aside class="menu">
             <p class="menu-label">{{config.links_title}}</p>
             <ul class="menu-list">
               {{#each config.links}}
               <li>
-                <a href="{{this}}">{{@key}}</a>
+                <a target="_blank" href="{{this}}">{{@key}}</a>
               </li>
               {{/each}}
             </ul>
@@ -52,7 +63,7 @@
             <ul class="menu-list">
               <li>
                 <a href="rss.xml">RSS</a>
-                <a href="https://github.com/garbados/my-blog">Source</a>
+                <a href="{{config.homepage}}">Source</a>
               </li>
             </ul>
           </aside>
