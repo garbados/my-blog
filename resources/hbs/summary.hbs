@@ -3,5 +3,8 @@
     <p><small><em>{{createdAt}}</em></small></p>
     <h1 class="title">{{title}}</h1>
     <div class="subtitle">{{markdown description}}</div>
+    {{#each tags}}
+    <span class="tag">{{.}}</span>
+    {{/each}}
   </a>
 </section>

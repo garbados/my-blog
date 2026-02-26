@@ -12,10 +12,8 @@ pom.xml.asc
 .hgignore
 .hg/
 .calva
-public/*.html
-public/fonts
+public/**/*.html
 public/img
-public/css
 public/rss.xml
 node_modules
 .clj-kondo

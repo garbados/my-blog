@@ -7,7 +7,7 @@ const {
   buildSite,
   newEntry,
   rssFeed
-} = require('.')
+} = require('./lib')
 
 yargs(hideBin(process.argv))
   .command({
