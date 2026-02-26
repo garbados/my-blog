@@ -1,0 +1,28 @@
+title: To Scream Apart the Sky
+description: If I gave you the words...
+tags:
+- poetry
+created_at: 2026-02-26T08:25:41.491Z
+
+# To Scream Apart the Sky
+
+(Originally prepared in May 2025, as part of a collection called *The Path to Utopia* which would become [TEETH](/teeth))
+
+AND IF I GAVE YOU THE WORDS  
+TO SCREAM APART THE SKY  
+WOULD YOU LOOSE THEM LIKE ARROWS  
+HAILED UPON THE SOIL-TO-BE  
+OF CRUELTY'S MOST FAITHFUL  
+RUSHING HEADLONG TO WAR?
+
+COULD YOUR TONGUE ALONE LIBERATE  
+YOUR MOUTH, YOUR LIPS  
+YOUR HOME, YOUR CITY  
+GENERATION AFTER GENERATION?  
+WERE WE WAITING FOR YOUR SAY-SO?
+
+WHEN YOU FIND THE WORDS  
+TO SCREAM APART THE SKY  
+YOU WILL SPEAK THEM  
+WITH YOUR WHOLE BODY  
+AND EVERYONE YOU LOVE
