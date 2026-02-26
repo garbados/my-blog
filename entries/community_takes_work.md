@@ -2,6 +2,7 @@ title: COMMUNITY TAKES WORK (a letter to fedi)
 description: A little network with big hopes struggles to live up to them.
 tags:
 - essay
+- old
 created_at: 2022-02-22T19:32:05.870Z
 
 # COMMUNITY TAKES WORK (a letter to fedi)
