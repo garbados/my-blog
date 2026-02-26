@@ -3,6 +3,7 @@ description: Turning chaos into uptime.
 tags:
 - software
 - essay
+- old
 created_at: 2018-01-15T21:07:52.236Z
 
 # Distributed datastructures and databases

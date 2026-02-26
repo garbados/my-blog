@@ -3,6 +3,7 @@ description: Thinking about the mess.
 tags:
 - software
 - essay
+- old
 created_at: 2018-01-14T22:12:52.223Z
 
 # Regarding Browsers

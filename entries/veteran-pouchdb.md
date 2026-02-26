@@ -4,6 +4,7 @@ tags:
 - pouchdb
 - software
 - code
+- old
 created_at: 2021-03-14T20:51:06.023Z
 
 # A Veteran's Guide to PouchDB

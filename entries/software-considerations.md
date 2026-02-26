@@ -3,6 +3,7 @@ description: Together we are strong. Knowing this, how can we write good softwar
 tags:
 - software
 - essay
+- old
 created_at: 2020-01-27T16:44:42.174Z
 
 # Considerations Regarding Distributed Software
