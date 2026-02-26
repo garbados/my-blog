@@ -2,7 +2,7 @@ title: Software From Another World
 description: Despite their best efforts, a better world awaits.
 tags:
 - software
-- organizing
+- essay
 created_at: 2021-07-26T02:44:11.854Z
 
 # Software From Another World

@@ -2,8 +2,7 @@ title: Considerations Regarding Distributed Software
 description: Together we are strong. Knowing this, how can we write good software?
 tags:
 - software
-- ethics
-- p2p
+- essay
 created_at: 2020-01-27T16:44:42.174Z
 
 # Considerations Regarding Distributed Software

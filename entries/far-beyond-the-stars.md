@@ -3,10 +3,6 @@ title: >
 description: >
   An essay about a Deep Space Nine episode and the ability of fiction to combat oppression.
 tags:
-- Star Trek
-- Deep Space Nine
-- visionary fiction
-- fiction
 - essay
 created_at: 2018-06-12T01:07:42.184Z
 

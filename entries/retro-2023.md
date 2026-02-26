@@ -2,7 +2,7 @@ title: Summer Retrospective 2023
 description: Regarding colonialism, revolt, and software.
 tags:
 - software
-- colonialism
+- essay
 created_at: 2023-07-20T14:23:17.237Z
 
 # Summer Retrospective 2023

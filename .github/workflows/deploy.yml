@@ -30,8 +30,6 @@ jobs:
         with:
           node-version: lts/* 
 
-      - run: npm i
-      
       - run: npm run build
 
       - name: Setup Pages

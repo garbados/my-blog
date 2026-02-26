@@ -2,10 +2,6 @@ title: They Let Me Live
 description: A utopian revenge story.
 tags:
 - fiction
-- utopian
-- revenge
-- elon_musk
-- portland
 created_at: 2025-06-26T13:42:42.836Z
 
 # They Let Me Live

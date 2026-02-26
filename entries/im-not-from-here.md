@@ -2,7 +2,6 @@ title: I'm Not From Here
 description: That doesn't make me special, or a main character, or anything like that. It makes me weird, and normal people make that suck.
 tags:
 - essay
-- personal
 - spooky
 created_at: 2025-10-30T01:15:14.600Z
 

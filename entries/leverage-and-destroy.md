@@ -2,7 +2,7 @@ title: Structural Advantages for Software Developers
 description: To Leverage and Destroy
 tags:
 - software
-- organizing
+- essay
 created_at: 2019-02-04T18:04:46.004Z
 
 # Structural Advantages for Software Developers to Leverage and Destroy

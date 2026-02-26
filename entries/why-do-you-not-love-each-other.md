@@ -2,7 +2,6 @@ title: Why do you not love each other?
 description: Can you overcome the covenant of profit and privation?
 tags:
 - essay
-- philosophy
 - spooky
 created_at: 2025-11-05T03:29:57.804Z
 

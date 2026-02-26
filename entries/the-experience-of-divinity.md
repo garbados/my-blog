@@ -2,7 +2,7 @@ title: The Experience of Divinity
 description: A bestiary of the eternal
 tags:
 - spooky
-- schizophrenia
+- essay
 created_at: 2025-07-24T01:16:50.600Z
 
 # The Experience of Divinity

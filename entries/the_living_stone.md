@@ -1,9 +1,8 @@
 title: The Living Stone
 description: A short story about crows.
 tags:
-- crows
 - fiction
-- writing
+- sci-fi
 created_at: 2021-03-08T05:47:29.625Z
 
 # The Living Stone

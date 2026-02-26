@@ -1,11 +1,8 @@
 title: Distributed datastructures
 description: Turning chaos into uptime.
 tags:
-- dat
-- ipfs
-- ssb
-- sql
-- distributed databases
+- software
+- essay
 created_at: 2018-01-15T21:07:52.236Z
 
 # Distributed datastructures and databases

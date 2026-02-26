@@ -1,9 +1,7 @@
 title: Chloe Sagal did not need to die.
 description: Words for a friend gone before us.
 tags:
-- suicide
-- transphobia
-- fascism
+- essay
 created_at: 2018-06-30T03:43:18.887Z
 
 # Chloe Sagal did not need to die.

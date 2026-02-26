@@ -1,10 +1,13 @@
 {
-	"title": "W O R D S",
-	"subtitle": "Essays, etc.",
-	"description": "My name is Diana. I make things but generally not very well. I put thoughts here.",
+	"title": "TAU LOGS",
+	"url": "https://blog.bovid.space/",
+	"pfp": "img/self_202x.jpeg",
+	"description": "My people grant names based on where we are sent, so here I am upon Earth, the magnificent paradise -- Terra Augustus Utopia!",
 	"links_title": "Me, elsewhere:",
 	"links": {
-		"Mastodon": "https://friend.camp/@garbados",
+		"Bluesky": "https://blacksky.community/profile/did:plc:csbrpj3jjikcitds6j2sahuv",
+		"Instagram": "https://www.instagram.com/garbados",
+		"Patreon": "https://www.patreon.com/c/garbados",
 		"GitHub": "https://github.com/garbados"
 	}
 }

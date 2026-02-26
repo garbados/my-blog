@@ -1,8 +1,7 @@
 title: Eggs
 description: Maybe if they'd been cheaper...
 tags:
-- poem
-- politics
+- poetry
 created_at: 2024-11-20T00:00:00.000Z
 
 # Eggs

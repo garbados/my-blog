@@ -1,6 +1,6 @@
 title: Let's begin.
 tags:
-- introductions
+- introduction
 description: About me and this blog.
 created_at: 2017-11-19T16:46:52.270Z
 

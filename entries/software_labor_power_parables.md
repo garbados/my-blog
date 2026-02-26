@@ -2,6 +2,7 @@ title: Parables Regarding Software
 description: Lessons learned through toil.
 tags:
 - software
+- essay
 created_at: 2023-06-26T17:57:26.979Z
 
 # Parables Regarding Software

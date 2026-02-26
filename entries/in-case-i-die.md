@@ -4,7 +4,6 @@ tags:
 - fiction
 - sci-fi
 - horror
-- AI
 created_at: 2026-01-16T08:32:02.058Z
 
 # In Case I Die

@@ -1,10 +1,7 @@
 title: The Artist, Afterward
 description: "Imagine with me: you are an artist in a post-scarcity world."
 tags:
-- post-capitalism
-- post-colonialism
-- communism
-- my-specific-beef-with-monetarism-is-that-cost-is-polydimensional
+- essay
 created_at: 2021-10-14T03:55:27.529Z
 
 # The Artist, Afterward

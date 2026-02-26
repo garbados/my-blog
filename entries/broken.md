@@ -1,7 +1,7 @@
 title: Broken
 description: What do we really have left? What can we do with it?
 tags:
-- dangerous
+- essay
 created_at: 2024-12-15T00:00:00.000Z
 
 # Broken

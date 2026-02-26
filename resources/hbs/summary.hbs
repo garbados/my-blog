@@ -1,0 +1,12 @@
+<section class="box">
+  <a href="{{config.url}}{{name}}">
+    <p><small><em>{{createdAt}}</em></small></p>
+    <h1 class="title">{{title}}</h1>
+    <div class="subtitle">{{markdown description}}</div>
+  </a>
+  <div class="tags">
+    {{#each tags}}
+    <a href="{{../config.url}}tag/{{this}}" class="tag">{{this}}</a>
+    {{/each}}
+  </div>
+</section>

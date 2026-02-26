@@ -1,12 +1,7 @@
 title: Spirits of the Human Animal
 description: A longer essay concerning systemic influences.
 tags:
-- rant
-- capitalism
-- colonialism
-- revolution
-- trans
-- lgbtq
+- essay
 created_at: 2024-02-05T00:14:05.139Z
 
 # Spirits of the Human Animal<a id="spirits-of-the-human-animal"></a>

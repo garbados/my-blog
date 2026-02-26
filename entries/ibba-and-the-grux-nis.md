@@ -1,7 +1,6 @@
 title: Ibba and the Grux'nis
 description: A *Shepherd* Story.
 tags:
-- shepherd
 - fiction
 created_at: 2020-01-30T13:19:09.861Z
 

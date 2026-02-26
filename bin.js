@@ -1,14 +1,15 @@
 #!/usr/bin/env node
 
 const yargs = require('yargs')
+const { hideBin } = require('yargs/helpers')
 
 const {
   buildSite,
   newEntry,
   rssFeed
-} = require('.')
+} = require('./lib')
 
-yargs
+yargs(hideBin(process.argv))
   .command({
     command: 'build',
     description: '',
@@ -41,5 +42,4 @@ yargs
     }
   })
   .alias('help', 'h')
-  .wrap(yargs.terminalWidth())
   .parse()

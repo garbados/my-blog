@@ -1,14 +1,9 @@
 title: Kill Your Server And Get Back To Bed
 description: Patterns for Serverless Applications
 tags:
-- javascript
-- web apps
-- app architecture
-- dat
-- ipfs
-- p2p
 - pouchdb
-- beaker
+- software
+- code
 created_at: 2018-10-27T03:06:38.787Z
 
 # Kill Your Server And Get Back To Bed: Patterns for Serverless Applications

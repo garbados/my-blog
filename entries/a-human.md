@@ -2,6 +2,8 @@ title: A Human
 description: It saved us, in a strange way. But then it had us, forever.
 tags:
 - fiction
+- horror
+- sci-fi
 created_at: 2025-10-25T23:13:03.571Z
 
 # A Human

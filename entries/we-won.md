@@ -1,7 +1,7 @@
 title: "\"We won.\""
 description: How to destroy a people.
 tags:
-- genocide
+- essay
 created_at: 2024-11-26T00:00:00.000Z
 
 # "We won."

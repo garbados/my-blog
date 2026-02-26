@@ -1,7 +1,7 @@
 title: The Killer is in the House
 description: He has nowhere to run.
 tags:
-- redacted
+- essay
 created_at: 2024-11-05T00:00:00.000Z
 
 # The Killer is in the House

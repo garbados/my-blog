@@ -1,7 +1,7 @@
 title: Vacation Retrospective 2018
 description: I'm on vacation this week and it feels weird.
 tags:
-- work
+- essay
 created_at: 2018-09-04T07:02:00.984Z
 
 # Vacation Retrospective 2018

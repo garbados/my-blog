@@ -1,7 +1,7 @@
 title: Governments That Don't Exist
 description: Pageantries and futures.
 tags:
-- politics
+- essay
 created_at: 2024-11-21T00:00:00.000Z
 
 # Governments That Don't Exist

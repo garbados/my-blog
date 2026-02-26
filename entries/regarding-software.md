@@ -2,7 +2,7 @@ title: Regarding why software is so bad
 description: Ours is a sorcerous craft. We can do it justice.
 tags:
 - software
-- capitalism
+- essay
 created_at: 2018-08-23T18:03:14.855Z
 
 # Regarding why software is so bad

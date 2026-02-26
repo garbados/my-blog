@@ -1,8 +1,7 @@
 title: Reaching For Never-Was
 description: Only through faith in better can it be realized.
 tags:
-- schizophrenia
-- politics
+- essay
 created_at: 2024-11-01T00:00:00.000Z
 
 # Reaching For Never-Was

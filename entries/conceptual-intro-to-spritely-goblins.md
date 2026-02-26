@@ -1,12 +1,8 @@
 title: A Conceptual Introduction to Spritely Goblins
 description: A transformative paradigm for distributed systems programming.
 tags:
-- p2p
-- spritely
-- goblins
-- tor
-- i2p
-- distributed-systems
+- software
+- essay
 created_at: 2022-12-04T21:30:19.288Z
 
 # A Conceptual Introduction to Spritely Goblins

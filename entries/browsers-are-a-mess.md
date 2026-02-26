@@ -1,9 +1,8 @@
 title: Regarding Browsers
 description: Thinking about the mess.
 tags:
-- browsers
-- javascript
-- thaenkin
+- software
+- essay
 created_at: 2018-01-14T22:12:52.223Z
 
 # Regarding Browsers
