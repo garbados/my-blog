@@ -1,16 +1,14 @@
-{{#partial "content" }}
+{{#> layout }}
   <section class="box">
     <h2>Entries tagged "{{tag}}"</h2>
     {{#each entries}}
       <section class="box">
         <a href="{{name}}">
-          <p><small><em>{{created_at}}</em></small></p>
+          <p><small><em>{{createdAt}}</em></small></p>
           <h2 class="title">{{title}}</h1>
           <div class="subtitle">{{{description}}}</div>
         </a>
       </section>
     {{/each}}
   </section>
-{{/partial}}
-
-{{> layout}}
+{{/layout}}

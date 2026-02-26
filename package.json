@@ -1,18 +1,18 @@
 {
   "name": "garbados-blog",
   "description": "Words as thought by meat.",
-  "homepage": "https://garbados.github.io/my-blog",
+  "homepage": "https://blog.bovid.space",
   "version": "1.0.0-beta",
   "private": true,
   "scripts": {
     "start": "run-p build serve",
-    "test": "npm run build && npm audit",
+    "test": "standard && npm run build && npm audit",
     "prebuild": "mkdir -p static fonts",
     "build": "run-p build:*",
     "build:html": "./bin.js build",
     "build:rss": "./bin.js rss",
     "build:scss": "sass -q -I node_modules resources/scss/style.scss public/css/style.css",
-    "build:fonts": "cp node_modules/font-awesome/fonts/* public/fonts/",
+    "build:fonts": "cp node_modules/@fortawesome/fontawesome-free//webfonts/* public/fonts/",
     "build:images": "cp resources/img/* public/img/",
     "new-entry": "./bin.js new-entry",
     "clean": "rm entries/*.md *.html; npm run build",
@@ -26,11 +26,16 @@
   "author": "Diana Belle <garbados@gmail.com>",
   "license": "CC BY-NC-ND 4.0",
   "devDependencies": {
-    "bulma": "^1.0.2",
-    "font-awesome": "^4.7.0",
+    "@fortawesome/fontawesome-free": "^7.2.0",
+    "bulma": "^1.0.4",
+    "handlebars": "^4.7.8",
+    "marked": "^17.0.3",
     "npm-run-all": "^4.1.5",
+    "rss": "^1.2.2",
     "sane": "^5.0.1",
-    "sass": "^1.80.5",
-    "serve": "^14.2.4"
+    "sass": "^1.97.3",
+    "serve": "^14.2.5",
+    "standard": "^17.1.2",
+    "yargs": "^18.0.0"
   }
 }
