@@ -2,6 +2,11 @@
   {{#with entry}}
     <div class="box">
       <p><small><em>{{createdAt}}</em></small></p>
+      <div class="tags">
+        {{#each tags}}
+        <a href="{{../../config.url}}tag/{{this}}" class="tag">{{this}}</a>
+        {{/each}}
+      </div>
       <hr>
       <div class="content">{{markdown body}}</div>
       <hr>
