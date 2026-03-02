@@ -2,6 +2,7 @@ title: Ode to the Worms
 description: ...Crawling Through the Skull of the Last Capitalist, Rotting Beneath the Earth
 tags:
 - poetry
+- featured
 created_at: 2023-01-24T18:24:38.129Z
 
 # Ode to the Worms Crawling Through the Skull of the Last Capitalist, Rotting Beneath the Earth

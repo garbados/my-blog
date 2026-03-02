@@ -3,6 +3,7 @@ description: A transformative paradigm for distributed systems programming.
 tags:
 - software
 - essay
+- featured
 created_at: 2022-12-04T21:30:19.288Z
 
 # A Conceptual Introduction to Spritely Goblins

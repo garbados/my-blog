@@ -4,6 +4,7 @@ description: >
   An essay about a Deep Space Nine episode and the ability of fiction to combat oppression.
 tags:
 - essay
+- featured
 created_at: 2018-06-12T01:07:42.184Z
 
 [episode]: http://memory-alpha.wikia.com/wiki/Far_Beyond_the_Stars_(episode)

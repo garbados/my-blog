@@ -1,0 +1,17 @@
+{{#> layout }}
+  <h3 class="title">Welcome</h1>
+  {{#with introduction}}
+    {{> summary config=../config}}
+  {{/with}}
+  <h3 class="title">Most recent by tag</h2>
+  {{#each recents}}
+    <h1>"{{tag}}"</h1>
+    {{#with entry}}
+      {{> summary config=../config}}
+    {{/with}}
+  {{/each}}
+  <h3 class="title">Featured</h2>
+  {{#each featured}}
+    {{> summary config=../config}}
+  {{/each}}
+{{/layout}}

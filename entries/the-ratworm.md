@@ -3,6 +3,7 @@ description: Do you want to know how magic really works?
 tags:
 - fiction
 - horror
+- featured
 created_at: 2026-02-26T08:10:02.249Z
 
 > *A product of grief and woe*  

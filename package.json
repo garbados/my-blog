@@ -8,7 +8,7 @@
   "scripts": {
     "start": "run-p build serve",
     "test": "eslint && npm run build && npm audit",
-    "prebuild": "npm i",
+    "prebuild": "pnpm i",
     "build": "run-p build:*",
     "build:html": "./bin.js build",
     "build:rss": "./bin.js rss",
@@ -36,5 +36,9 @@
     "sane": "^5.0.1",
     "serve": "^14.2.5",
     "yargs": "^18.0.0"
+  },
+  "engines": {
+    "node": ">=10",
+    "pnpm": ">=3"
   }
 }
