@@ -2,6 +2,7 @@ title: "Furthermore: Seven Poems"
 description: No one has successfully prevented me from adding linebreaks to prose.
 tags:
 - poetry
+- collection
 created_at: 2026-01-06T03:04:10.252Z
 
 # Furthermore: Seven Poems

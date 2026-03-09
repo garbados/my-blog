@@ -2,6 +2,7 @@ title: Seven Poems
 description: From Summer 2025
 tags:
 - poetry
+- collection
 created_at: 2025-08-09T00:00:00.000Z
 
 # Seven Poems from Summer 2025
