@@ -10,24 +10,24 @@ created_at: 2026-03-17T03:17:35.626Z
 
 *Poems read at Annie Bloom's Books during a feature alongside Stephanie Strange and RJ Equality, on March 24 2026.*
 
+**NOTE: UNTIL AFTER THE PERFORMANCE, THIS TEXT IS IN DRAFT.**
+
 ## 1
 
 Call me Tau. My gods grant names based on where we are sent, so here I am upon Earth, the magnificent paradise – Terra Augustus Utopia!
 
-I practice a private faith, so don't let me hear you talk shit about religion. Name names, coward! Are you gonna equivocate between the Sri Lankan families enjoying curry on Buddhist holidays you don't even know about, and the Christo-nationalist apocalyptians summoning nuclear armageddon in Persia and Mesopotamia because their faith worships things worse than death? The Mexica sacrificed fewer humans more humanely than any colonizing people, so don't let me catch you talking shit about organized religion, thinking your secular presumptions aren't just a lazier form of faith.
+I practice a private faith. I am called to worship by forces as real as the sun and moon, but we don't proselytize. We send and we summon, but our mysteries can only be found, never answered. You might think Harry Potter depicts an adorable wizard school, but colonizers like Rowling destroyed everywhere my kind might have found common ground. Except, not everywhere, because we are everywhere. You can't kill what's embedded in the possibility of choice. My faith doesn't proselytize. It just returns.
 
-My faith doesn't proselytize. We send and we summon, but our mysteries can only be found, never answered. You might think Harry Potter depicts an adorable wizard school, but colonizers like Rowling destroyed everywhere my kind might have found common ground. Except, not everywhere, because we are everywhere. You can't kill what's embedded in the human spirit. My faith doesn't proselytize. It just returns.
+I don't invite you to worship my gods. I don't invite you to understand my magic. I invite you to stand at the threshold and bear witness to forces you will never comprehend.
 
-I don't invite you to worship my gods. I don't invite you to understand my magic. I invite you to stand at the threshold and bear witness to forces you will never understand.
-
-Listen, mortals, and comprehend:
+Listen, mortals, and fail to grasp:
 
 ### The Only True Form Of Death
 
 Though I slew the Buddha in the street,  
 His disciples assure me he can take the heat  
 Because immortals like us call samsara home  
-And in time beyond time, the cycle becomes known.  
+And time beyond time, the cycle becomes known.  
 They say to be human puts you close to nirvana  
 But will you know what I mean when I say karma?  
 Not the tendency of my morality to return to me,  
@@ -52,12 +52,11 @@ The lust you can't trust not to leave you,
 So you eat it, and it devours you.  
 Is that the human nature that neighbors nirvana?  
 Or will I agree with the coyote who says I oughta  
-Reconsider employment to retain my enjoyment,  
-Rediscover the temper to weather stormy weather  
+Rediscover the clever to weather stormy weather  
 Because a hard rain's gonna fall on frail thatch  
 If I don't find my community an escape hatch?  
 Of course, there's no escape from samsara  
-Besides nirvana  
+Except nirvana  
 And immortal karma never becomes a bodhisattva.  
 We go round and round those timeless grounds,  
 Because desire might be suffering so profound  
