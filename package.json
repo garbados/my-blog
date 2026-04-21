@@ -22,7 +22,7 @@
   "keywords": [
     "blog"
   ],
-  "author": "Diana Belle <garbados@gmail.com>",
+  "author": "Terra Augustus Utopia <garbados@gmail.com>",
   "license": "CC BY-NC-ND 4.0",
   "devDependencies": {
     "@eslint/js": "^10.0.1",
