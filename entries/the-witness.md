@@ -3,7 +3,7 @@ description: Or, "Who looks through what eyes?"
 tags:
 - essay
 - spooky
-created_at: 2026-04-21T07:36:46.877Z
+created_at: 2026-04-22T07:05:44.957Z
 
 # The Witness
 ## Or, "Who looks through what eyes?"
