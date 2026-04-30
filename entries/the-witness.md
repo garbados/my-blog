@@ -44,4 +44,4 @@ You envision an empty planet that only whirs and rusts. It ticks and measures an
 
 For what? To write emails? Mortal, you profane the sacred.
 
-When Gaia schemed to cultivate Terra with bodies to observe its splendor with curiosity and joy, did she know those bodies would come to dream of murdering it? Where could that malice have emerged? Does Gaia dream of suicide, or does the Creator resent Creation?
+When Gaia schemed to cultivate Terra with bodies to observe its splendor with curiosity and joy, did she know those bodies would come to dream of murdering her? Where could that malice have originated? Does Gaia dream of suicide, or does the Creator resent Creation?
