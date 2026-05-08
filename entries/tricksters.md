@@ -26,7 +26,8 @@ but I assure you to my very best,
 I am as real as my flesh, though  
 if I told you *all* my secrets,  
 you'd find they wouldn't quite fit --  
-but, in the puzzle of each other?  
+Which do you mean, I wonder?  
+In the puzzle of each other,  
 Or in the riddle of you, my other?
 
 You think it isn't true  
