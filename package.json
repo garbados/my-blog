@@ -17,7 +17,8 @@
     "clean": "rm entries/*.md *.html; npm run build",
     "watch": "sane 'npm run build' --glob={lib,resources,entries}/**/* --glob={package.json,config.json,bin.js}",
     "serve": "serve public",
-    "dev": "DEV=true run-p watch serve"
+    "dev": "DEV=true run-p watch serve",
+    "dev-offline": "OFFLINE=true npm run dev"
   },
   "keywords": [
     "blog"

@@ -74,11 +74,11 @@ to make you believe bullshit.
 
 Author's comment:
 
-TAU, both the stage persona and my personal name of address, are the result of taking inspiration from my disjunction. If I were being cute, I'd describe my brain as *neurospicy*; the DSM-V has a long set of words for my differences, and all of them are looking in from the outside. I'm the one looking out.
+*Tau*, both the stage persona and my personal name of address, are the result of taking inspiration from my disjunction. If I were being cute, I'd describe my brain as *neurospicy*. The DSM-V has a long set of words for my differences, and all of them are looking in from the outside. I'm the one looking out.
 
-No one can ever speak to the reality of your experience but you. For schizotypal people, who struggle with paranoia and dream-like vexations, this means an immense part of your lived experience is... not quite trustworthy, and not quite real -- at least not like real is real for other people, I guess. I channel it into my art, and -- can we be real with each other, as theater nerds? When are you really separate from your art?
+No one can ever speak to the reality of your experience but you. For schizotypal people, who struggle with paranoia and dream-like vexations, this means an immense part of your lived experience is... not quite trustworthy, and not quite real -- at least not like real is real for other people, I guess. I channel it into my art, and -- can we be real with each other, as theater nerds? *When are you really separate from your art?*
 
-Schizophrenia is still one of those ~scary~ as in *dangerous* categories of distinct perspectives. It's cheap as free to let us be but freer still to make us still, you might say. I grew up masking in a lot of different ways, and I find it hard to unmask -- or rather, I don't know that my masks and I are that different. Are they masks, or do I just have many faces? What would it mean to have an answer? Isn't it more livable to make peace in the moment, here, where you just don't know?
+Schizophrenia is still one of those ~scary~ as in *dangerous* categories of distinct perspectives. It's cheap as free to let us be but freer still to make us still, you might say. I grew up masking in a lot of different ways, and I find it hard to unmask -- or rather, I don't know that my masks and I are that different. Are they all masks, or many shifting faces? What would it mean to have an answer? Isn't it more livable to make peace in the moment, here, where you just don't know?
 
 Or:
 
