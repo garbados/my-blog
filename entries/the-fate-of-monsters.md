@@ -2,6 +2,8 @@ title: The Fate of Monsters
 description: Do you want to go extinct? Do you want to watch it happen?
 tags:
 - poetry
+- essay
+- spooky
 created_at: 2026-03-09T01:58:50.253Z
 
 # The Fate of Monsters
