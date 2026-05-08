@@ -8,10 +8,10 @@ created_at: 2026-05-08T22:37:35.481Z
 # Tricksters
 
 > You may have heard it said...  
-> My people grant names based on where we are sent  
-> so here I am upon Earth, the magnificent paradise:  
-> Terra Augustus Utopia!  
-> But you can call me Tau.  
+> *My people grant names based on where we are sent*  
+> *so here I am upon Earth, the magnificent paradise:*  
+> *Terra Augustus Utopia!*  
+> *But, you can call me Tau.*  
 > You may have thought, more or less charitably,  
 > *how theatrical*.  
 > Well, about that...
