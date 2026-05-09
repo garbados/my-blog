@@ -27,7 +27,7 @@ I am as real as my flesh,
 though  
 if I told you *all* my secrets,  
 you'd find they wouldn't quite fit --  
-But, into what?  
+But, into what, I wonder?  
 In the puzzle of each other,  
 or in the riddle of you, my other?
 
