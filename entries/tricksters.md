@@ -21,14 +21,15 @@ more a character than a contract;
 a performer, an entertainer, a jester --  
 not a guest. But, maybe a trickster.  
 Maybe that is the safer assumption.  
-I'm full of the lies called fiction  
+After all, I am full of the lies called fiction  
 but I assure you to my very best,  
-I am as real as my flesh, though  
+I am as real as my flesh,  
+though  
 if I told you *all* my secrets,  
 you'd find they wouldn't quite fit --  
-Which do you mean, I wonder?  
+But, into what?  
 In the puzzle of each other,  
-Or in the riddle of you, my other?
+or in the riddle of you, my other?
 
 You think it isn't true  
 because it can't all be true,  
