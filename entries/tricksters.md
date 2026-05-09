@@ -80,7 +80,7 @@ Author's comment:
 
 No one can ever speak to the reality of your experience but you. For schizotypal people, who struggle with paranoia and dream-like vexations, this means an immense part of your lived experience is... not quite trustworthy, and not quite real -- at least not like real is real for other people, I guess. I channel it into my art, and -- can we be real with each other, as theater nerds? *When are you really separate from your art?*
 
-Schizophrenia is still one of those ~scary~ as in *dangerous* categories of distinct perspectives. It's cheap as free to let us be but freer still to make us still, you might say. I grew up masking in a lot of different ways, and I find it hard to unmask -- or rather, I don't know that my masks and I are that different. Are they all masks, or many shifting faces? What would it mean to have an answer? Isn't it more livable to make peace in the moment, here, where you just don't know?
+Schizophrenia is still one of those *scary* as in **dangerous** categories of distinct perspectives. It's cheap as free to let us be but freer still to make us still, you might say. I grew up masking in a lot of different ways, and I find it hard to unmask -- or rather, I don't know that my masks and I are that different. Are they all masks, or many shifting faces? What would it mean to have an answer? Isn't it more livable to make peace in the moment, here, where you just don't know?
 
 Or:
 
