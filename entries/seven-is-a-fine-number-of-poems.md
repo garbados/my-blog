@@ -21,15 +21,15 @@ Anyway, here's some poetry.
 
 ## Untitled (soothsayers)
 
-Both scientists and storytellers
-are soothsayers
-differing in their nature as oracles
-only by the manner of the prophecies
-they each impart.
-When a scientist tells you what lies
-on a distant world
-how is it so different from a tale
-illuminating what gleams
+Both scientists and storytellers  
+are soothsayers  
+differing in their nature as oracles  
+only by the manner of the prophecies  
+they each impart.  
+When a scientist tells you what lies  
+on a distant world  
+how is it so different from a tale  
+illuminating what gleams  
 in your own heart?
 
 ## Masculine Love
