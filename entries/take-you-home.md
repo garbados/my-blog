@@ -42,7 +42,7 @@ to a social species.
 Before we eat, you might hear me say  
 *takthauma-bilachte*:  
 everything delicious is sacred.  
-I'd treat, but -- no prices.  
+I'd treat, but — no prices.  
 If I said Yucateca-Punjabi,  
 would you think it sounded tasty?  
 Would you be willing to try?
@@ -59,8 +59,8 @@ You live up to the work,
 and that makes you a parent.  
 Providing genetic material, well,  
 you can do that without even trying,  
-but the eight adults I call *pa'ti* --  
-that is, ma and pa and all that --  
+but the eight adults I call *pa'ti* —  
+that is, ma and pa and all that —  
 for me and a dozen siblings  
 they tried their hardest.
 
