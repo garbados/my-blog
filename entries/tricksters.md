@@ -16,7 +16,7 @@ created_at: 2026-05-08T22:37:35.481Z
 > *how theatrical*.  
 > Well, about that...
 
-You think Terra Augustus Utopia is an act,  
+You may think my amalgam an act,  
 more a character than a contract;  
 a performer, an entertainer, a jester --  
 not a guest. But, maybe a trickster.  
@@ -29,7 +29,7 @@ if I told you *all* my secrets,
 you'd find they wouldn't quite fit --  
 But, into what, I wonder?  
 In the puzzle of each other,  
-or in the riddle of you, my other?
+or in the riddle of you, my neighbor?
 
 You think it isn't true  
 because it can't all be true,  
