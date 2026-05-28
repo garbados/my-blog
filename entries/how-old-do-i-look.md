@@ -12,7 +12,7 @@ created_at: 2026-05-28T16:39:49.905Z
 How old do I look?  
 Not decades, just digits.  
 One? Well, that would be weird.  
-Surely I'm older than ten.  
+Surely I'm more mature than a ten-year-old.  
 So, two? That would be reasonable.  
 Most folks have ages in two digits.  
 If I said three, well,  
