@@ -3,8 +3,12 @@
   {{#with introduction}}
     {{> summary config=../config}}
   {{/with}}
-  <h3 class="title">Most recent by tag</h2>
+  <h3 class="title">Most recent</h3>
   {{#each recents}}
+    {{> summary config=../config}}
+  {{/each}}
+  <h3 class="title">Other recent by tag</h2>
+  {{#each recentAmongTags}}
     <h1>"{{tag}}"</h1>
     {{#with entry}}
       {{> summary config=../config}}
