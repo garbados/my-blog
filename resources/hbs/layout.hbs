@@ -57,7 +57,11 @@
             <ul class="menu-list">
               {{#each config.links}}
               <li>
-                <a target="_blank" href="{{this}}">{{@key}}</a>
+                {{#if this}}
+                <a class="button" target="_blank" href="{{this}}">{{@key}}</a>
+                {{else}}
+                <a class="button" disabled>{{@key}}</a>
+                {{/if}}
               </li>
               {{/each}}
             </ul>
