@@ -2,6 +2,7 @@ title: The First New Cycle
 description: Regarding the Witch Clock's second edition.
 tags:
 - spooky
+- personal
 created_at: 2026-05-30T12:26:15.000Z
 
 # The First New Cycle
@@ -71,5 +72,3 @@ Today is the Feast of the Steward's Moon:
 > We move with what moves us: destruction and creation share a step; the herd tramples and tills alike. To steward is not to own or control but to neighbor, to stand with. All that you control, controls you. Give and take? No. Receive and receive alike.
 
 I will give my life to this world, because she gave it to me. It is said, paradise is love, and it begins by loving yourself. But, there's the rub: if you don't know what love is, how can you love yourself? If a loving community requires knowing how to love, then how can it be built without knowing? If the most vivid memories of love I possess come from lifetimes as trees, insects, and fish, then what am I to do among humans? If I spent ten years saying "I love you" every single day, and all the strength and power of love amounted to nothing but a fearsome illusion -- how can I believe I know what paradise is? How can I trust your intimacy, your compliments, your kindness, when they evaporate so quickly? How confidently can I believe my love is not violence?
-
-- TAU
