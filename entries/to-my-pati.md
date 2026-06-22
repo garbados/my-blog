@@ -53,4 +53,4 @@ Annotated:
 [Or: I sing like you sang to me, maker.]  
 [And: your love lives on in every sound I make.]  
 *- Dheli-TAU*  
-[Your child, who was sent to Earth.]
+[Signed: your child, who was sent to Earth.]
