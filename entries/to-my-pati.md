@@ -8,7 +8,7 @@ created_at: 2026-06-22T21:12:23.051Z
 
 *After [Home](./take-you-home), drafted during an exercise with Julia Bouwsma regarding works not __for__ an audience.*
 
-Original:
+Original, as transcribed from a recovered recording:
 
 > Daldurtho maidhei.
 >
@@ -22,7 +22,7 @@ Original:
 >
 > \- Dheli-TAU
 
-Annotated:
+Annotated translation:
 
 *Daldurtho maidhei.*  
 [Greetings. I am well, and I miss you.]  
