@@ -27,7 +27,7 @@ Annotated translation:
 *Daldurtho maidhei.*  
 [Greetings. I am well, and I miss you.]  
 [Or: I will always be well because of you.]  
-*Ihrdureth-hama, saldina gaemakha,*  
+*Ihrdureth-ama, saldina gaemakha,*  
 [The past-future confounds. Everything withers.]  
 [I miss the satiation of dinners with my siblings and you.]  
 *Derdumu gha.*  
