@@ -8,7 +8,7 @@ created_at: 2026-06-22T21:12:23.051Z
 
 *After [Home](./take-you-home), drafted during an exercise with Julia Bouwsma regarding works not __for__ an audience.*
 
-Original, as transcribed from a recovered recording:
+Original, as transcribed from a recovered letter:
 
 > Daldurtho maidhei.
 >
